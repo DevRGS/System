@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz Objeções</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kanit&display=swap');      
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+    </style>
+</head>
+
+<header class="cabeça" id="form-header">
+    <div class="menu-contain">
+        <div class="menu-nav">
+         <nav class="links-menu">
+            <a href="autoatendimento.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Autoatendimento</a>
+            <a href="Integrações.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Integrações</a>
+            <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita NFE</a>
+            <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
+            <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
+                KDS</a>
+            <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Business Intelligence</a>
+            <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Programa Fidelidade</a>
+            <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
+            <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz Objeção</a>
+            <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head" rel="noopener noreferrer">Formulário</a>
+         </nav>
+     </div>
+</header>
+
+<body id="matriz-objc">
+
+    <h2>Tabela de Objeções</h2>
+
+    <table class="matriz-table">
+        <tr class="matriz-tr">
+            <th class="matriz-th">Tipos de Objeções</th>
+            <th class="matriz-th">Exemplos</th>
+            <th class="matriz-th">Como Resolver?</th>
+        </tr>
+        <tr class="matriz-tr">
+            <td class="matriz-td"><p class="matriz-td-title">Concepção errada</p></td>
+            <td class="matriz-td">Mau entendimento da solução ou já possui alguma informação equivocada. Acredita que a sua empresa não oferece o que ele precisa, oferece algo diferente.
+            <p class="matriz-td-p-exemplo">Exemplo: Mas vocês não entregam isso? Mas vocês não fazem aquilo?</p></td>
+            <td class="matriz-td">Educar melhor o lead sobre a sua solução.</td>
+        </tr>
+        <tr class="matriz-tr">
+            <td class="matriz-td"><p class="matriz-td-title">Ceticismo</p></td>
+            <td class="matriz-td">Lead cauteloso por falta de segurança e de confiança. Não acredita que a solução funcione no seu cenário especificamente.
+            <p class="matriz-td-p-exemplo">Exemplo: Mas o meu cenário é diferente do cenário de Fulano.</p></td>
+            <td class="matriz-td">Mostrar cases, dados quantitativos e referências da sua solução no cenário do lead.</td>
+        </tr>
+        <tr class="matriz-tr">
+            <td class="matriz-td"><p class="matriz-td-title">Real Problema</p></td>
+            <td class="matriz-td">Desvantagem da sua solução quando comparada à solução do concorrente. 
+            <p class="matriz-td-p-exemplo">Exemplo: Mas a empresa X tem um preço menor.</p></td>
+            <td class="matriz-td">Esclarecer as vantagens e as desvantagens da sua solução relacionada às outras.</td>
+        </tr>
+        <tr class="matriz-tr">
+            <td class="matriz-td"><p class="matriz-td-title">Reclamação Real</p></td>
+            <td class="matriz-td">Já teve uma má experiência com você ou já ouviu falar em algum cliente insatisfeito. <p class="matriz-td-p-exemplo">Exemplo: Fulano me atendeu mal da última vez. A empresa X não gostou muito dos seus serviços.</p></td>
+            <td class="matriz-td">Peça desculpas e mostre que aquele caso foi uma exceção que não irá mais acontecer.</td>
+        </tr>
+        <tr class="matriz-tr">
+            <td class="matriz-td"><p class="matriz-td-title">Deal breaker</p></td>
+            <td class="matriz-td">Apresenta um cenário em que não é possível transpor a objeção. 
+            <p class="matriz-td-p-exemplo">Exemplo: Só tenho R$100 para investir e meu próximo orçamento só será analisado ano que vem. Não posso mudar esse cenário.</p></td>
+            <td class="matriz-td">Desqualificar o lead e/ou tentar retomá-lo no futuro.</td>
+        </tr>
+    </table>
+    
+    
+
+    
+    <select id="listaSuspensa" onchange="mostrarDescricao()">
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="email">Você poderia me enviar as informações por e-mail?</option>
+        <option value="valores">Querer apenas valores</option>
+        <option value="ingressos">Utilizar para venda de ingressos</option>
+        <option value="sem-data">Sem data prevista para abertura</option>
+        <option value="consignado">Consignado</option>
+        <option value="receita">Nota fiscal emitir automaticamente para a Receita</option>
+        <option value="sem-estoque">Apenas pdv, sem controle de estoque</option>
+        <option value="tempo-lig">Não tem tempo para ficar na ligação</option>
+        <option value="nao-demo">Sem tempo para participar do processo da demonstração do sistema </option>
+        <option value="vitalicio">Interesse em sistema vitalicio </option>
+        <option value="deferencial">Quer saber o diferencial do produto/empresa</option>
+        <option value="sistema-caro">Achou o sistema caro</option>
+        <option value="nf-servico">Emissão de Nota de Serviço</option>
+        <option value="validar">Precisa validar com um terceiro antes (sócio, marido, esposa, etc)</option>
+        <!-- Adicione outras opções conforme necessário -->
+    </select>
+    
+    <div id="matrizDescricao">
+        <p id="matrizDescricao-p">Descrição aparecerá aqui.</p>
+    </div>
+
+    <div id="opcoesValores" style="display:none;">
+        <p class="matriz-p">Resposta do Cliente:</p>
+        <label for="opcaoSim" class="matriz-label" >Reduzir Custos</label>
+        <input type="radio" class="matriz-radio" id="opcaoReduzirCustos" name="opcoesValores" onclick="mostrarTextoOpcao('reduzirCustos')">
+        <label for="opcaoNao" class="matriz-label" >Melhorar Gestão</label>
+        <input type="radio" class="matriz-radio" id="opcaoMelhorarGestao" name="opcoesValores" onclick="mostrarTextoOpcao('melhorarGestao')">
+        <div id="textoOpcao"></div>
+    </div>
+
+
+<script>
+    function mostrarDescricao() {
+        var listaSuspensa = document.getElementById("listaSuspensa");
+        var matrizDescricaoDiv = document.getElementById("matrizDescricao");
+        var opcoesValores = document.getElementById("opcoesValores");
+
+        var opcaoSelecionada = listaSuspensa.options[listaSuspensa.selectedIndex].value;
+
+        var matrizDescricaoMap = {
+            // ... (mapeamento existente) ...
+            "email": "Para ser mais assertivo eu preciso entender a sua operação, para que o material separado pelo meu especialista faça sentido e a proposta esteja dentro do esperado, podemos fazer desta forma?",
+            "valores": "Pensando em valores e nas necessidades da sua operação gostaria de entender se a prioridade seria reduzir o custo ou melhorar a gestão que você tem do seu negócio para alavancar para os próximos meses?",
+            "ingressos": "DEAL BREAKER",
+            "sem-data": "DEAL BREAKER",
+            "consignado": "DEAL BREAKER",
+            "receita": "precisamos entender antes se faz parte do módulo de notas fiscais mais básico ou do facilita NFE",
+            "sem-estoque": "Entendo que hoje esteja procurando apenas um sistema para lançar suas vendas, Mas o meu objetivo é garantir que controlando seu estoque, você vai conseguir entender de uma forma muito mais precisa quais são os produtos que têm mais saída e com isso, investindo seu dinheiro nos produtos ideais para aumentar seu faturamento, imagino que aumentar seu faturamento também seja uma das suas prioridades, estou certo? ",
+            "tempo-lig": "É que na verdade neste primeiro momento não estou entrando em contato para negociarmos! Então meu intuito com essa ligação que vai durar apenas 2 ou 3 minutos é só entender um pouco sobre quais são suas necessidades com o nosso sistema e ver se conseguimos atendê-lo de forma eficiente. Aí nós deixamos a parte da apresentação e negociação para quando estiver mais tranquilo na sua agenda, consigo esses 2 minutos agora contigo? ",
+            "nao-demo": "Eu entendo que deve estar corrido por aí, mas deixando claro que o nosso objetivo não é consumir o seu tempo, muito pelo contrário! Essas perguntas que eu te fiz já foram feitas de forma estratégica para que o meu especialista prepare um material específico para o seu negócio. Sem contar que o bate papo dura apenas 20 minutos, coisa rápida! :)",
+            "vitalicio": "Entendo seu ponto, mas se você analisar bem, consegue ver que usando um sistema mensal você terá diversas vantagens, como a principal delas sendo um atendimento de suporte exclusivo para você, já com um sistema vitalício se você tiver qualquer problema, não irá conseguir solicitar suporte, tendo que contratar um novo sistema pela falta de atendimento. Sendo assim, você estaria perdendo tempo e dinheiro, imagino que economizar tempo e dinheiro também sejam suas prioridades, estou certo?",
+            "deferencial": "Hoje uma das principais vantagens de se utilizar a ConnectPlug é que nós possibilitamos sua contratação de forma modular conforme suas necessidades, ou seja, o intuito principal da nossa empresa é garantir que vamos te entregar uma solução para o seu estabelecimento para que você não tenha mais problemas ou dores de cabeça com relação a um sistema de gestão. Então nós iremos auxiliar você tanto na parte da gestão do seu negócio, quanto para quem está operando no caixa no dia a dia!",
+            "sistema-caro": "olhando desta forma, imagino que tenha achado o sistema caro, mas é que você ainda não conseguiu visualizar na prática como o sistema irá auxiliar você de uma forma intuitiva, rápida e eficiente. Você pode até achar um sistema mais barato que te ajude apenas à curto prazo, mas com certeza quando você começar a buscar a expansão da sua empresa, você irá sentir a necessidade de algo que seja mais completo. Então o meu objetivo é te garantir que você terá uma experiência única conosco. E eu quero deixar claro que meu objetivo não é apenas te vender meu produto e sim, auxiliar em todo a gestão e sucesso da sua empresa!",
+            "nf-servico": "Não fazemos, porém o objetivo é entender o volume de notas feitas pelo lead para que seja possivel direcionar ao sefaz ou desqualificar.",
+            "validar": "Nós podemos fazer uma primeira reunião para que possa ter um entendimento melhor a respeito de como iremos auxiliar sua operação no dia a dia, com isso você terá mais insumos para decidir junto ao seu sócio qual será o sistema ideal para vocês. E caso seja interessante, posteriormente podemos marcar uma segunda reunião junto à ele para alinharmos os últimos detalhes. Podemos fazer desta forma? ",
+        };
+
+        matrizDescricaoDiv.innerHTML = "<p>" + matrizDescricaoMap[opcaoSelecionada] + "</p>";
+
+        if (opcaoSelecionada === "valores") {
+            opcoesValores.style.display = "block";
+        } else {
+            opcoesValores.style.display = "none";
+        }
+    }
+
+    function mostrarTextoOpcao(opcao) {
+        var textoOpcaoDiv = document.getElementById("textoOpcao");
+
+        var textoMap = {
+            "reduzirCustos": "Bom, como sua prioridade é reduzir seus custos o nosso sistema de início pode parecer não fazer muito sentido por conta do valor dele, porém  tenho um exemplo da Joyjoy café, uma empresa que se tornou um grande case de sucesso aqui conosco. Com o uso do nosso sistema já teve um aumento de 30% do seu faturamento só por estar trabalhando com um sistema que além de manter o estabelecimento organizado, conseguimos garantir uma projeção para expansão da empresa. Tendo em vista que possibilitamos a expansão desta empresa, podemos fazer o mesmo com a sua! Então imagino que aumentar seu faturamento também seja uma das suas prioridades, estou certo?",
+
+            "melhorarGestao": "Bom, como sua prioridade é melhorar sua gestão, tenho um exemplo da Joyjoy café, uma empresa que se tornou um grande case de sucesso. Com o uso do nosso sistema já teve um aumento de 30% do seu faturamento só por estar trabalhando com um sistema que além de manter o estabelecimento organizado, conseguimos garantir uma projeção para expansão da empresa. Tendo em vista este ponto que eu te trouxe, você acha que faz sentido a gente marcar uma demonstração do nosso sistema para você conhecer na prática como iremos auxiliar em todos estes pontos que me trouxe?",
+        };
+
+        textoOpcaoDiv.innerHTML = "<p>" + textoMap[opcao] + "</p>";
+    }
+</script>
+
+
+
+    
+    <div class="referencias">
+        <h2>Referências:</h2>
+        <a href="https://www.outboundmarketing.com.br/matriz-de-objecao/">Matriz De Objeções Em Vendas: Por Que E Como Montar A Sua?</a>
+        <a href="https://www.outboundmarketing.com.br/flipchart-friday-matriz-de-objecoes/">[Flipchart Friday #20] Como Construir Uma Matriz De Objeções?</a>
+        <a href="https://www.salesforce.com/blog/2014/12/effectively-handling-4-types-customer-objections-cso-gp.html">Effectively Handling 4 Types of Customer Objections</a>
+        <a href="https://blog.hubspot.com/sales/the-5-most-common-objections-during-prospecting-and-how-to-overcome-them">The 7 Most Common Objections During Prospecting</a>
+    </div>
+</body>

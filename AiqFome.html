@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração AiqFome</title>
+    <link rel="stylesheet" href="style.css">
+    
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kanit&display=swap');      
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+</style>
+
+</head>
+
+<header class="cabeça">
+    <div class="menu-contain">
+        <div class="menu-nav">
+         <nav class="links-menu">
+            <a href="autoatendimento.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Autoatendimento</a>
+            <a href="Integrações.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Integrações</a>
+            <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita NFE</a>
+            <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
+            <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
+                KDS</a>
+            <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Business Intelligence</a>
+            <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Programa Fidelidade</a>
+            <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
+            <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz Objeção</a>
+            <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head" rel="noopener noreferrer">Formulário</a>
+         </nav>
+     </div>
+</header>
+
+<iframe src="https://drive.google.com/file/d/1eWl_v_0SFXa8RD0iz7534I5pI-woqpf4/preview" width="100%" height="615px"></iframe>
+
+<body class="aiqfome-body">
+
+<h1 class="aiqfome-h1">INTEGRAÇÃO AIQFOME</h1>
+
+<h2 class="aiqfome-h2">Módulo pago? <span class="aiqfome-destaque">Sim</span></h2>
+
+<p class="aiqfome-p">Trata-se de uma integração em status <span class="aiqfome-destaque">BETA</span> até o momento. O módulo de integração com a plataforma AIQFOME tem como objetivo: possibilitar o recebimento dos pedidos vindos da plataforma diretamente em nosso PDV  (a partir da <span class="aiqfome-destaque">versão 2.9.9</span>) . Não é possivel exportar cardápio, a integração é feita por meio de chave de integração de produtos e atributos.</p>
+
+<h1 class="aiqfome-h1">1. Credenciais para Integração:</h1>
+<p class="aiqfome-p">Diferente de outras integrações, os dados necessários para se habilitar a integração em nosso ERP seriam USUÁRIO E SENHA de nosso cliente da plataforma AIQFOME.</p>
+
+ 
+<h2 class="aiqfome-h2">Caminho da tela abaixo: </h2>
+<h3 class="aiqfome-h3">ERP CPLUG>Configurações>Integração AIQFOME></h3>
+
+<div class="integração-delivery-img"><img src="src/img/Integração-Delivery/AiqFome/aiqfome_erp_credenciais1.PNG" alt=""></div>
+<h2 class="aiqfome-h2">Em  CONFIGURAÇÕES PRINCIPAIS  insira as seguintes informações:</h2>
+
+<p class="aiqfome-p">Usuário e senha: Insira as credenciais que nosso cliente utiliza na plataforma AIQFOME</p>
+<p class="aiqfome-p">Tenha a possibilidade de selecionar um método de pagamento e vendedor (estas informações poderão ser utilizadas em relatórios, para que se filtre facilmente os pedidos vindos da plataforma AIQFOME)</p>
+
+<p class="aiqfome-p">Em  OUTRAS CONFIGURAÇÕES  tenha a possibilidade de definir o especificar o aceite automático dos pedidos.</p>
+<h1 class="aiqfome-h1">2. Plataforma AIQFOME - Liberação do campo <span class="aiqfome-destaque">CÓDIGO INTERNO</span> - Chave de Integração:</h1>
+<p class="aiqfome-p">Por padrão a plataforma AIQFOME não exibe o campo <span class="aiqfome-destaque">CÓDIGO INTERNO</span> (campo que deverá conter a chave de integração gerada em cada produto e atributo do <span class="aiqfome-destaque">ERP CPLUG</span>). </p>
+<p class="aiqfome-p">É necessário acionar o time de suporte da plataforma AIQFOME  VIA CHAT  e solicitar a liberação deste campo para integração com a CPLUG.</p>
+
+ 
+<h2 class="aiqfome-h2">Caminho da tela abaixo: </h2>
+<h3 class="aiqfome-h3">Plataforma AIQFOME>Ajuda></h3>
+
+<div class="integração-delivery-img"><img src="src/img/Integração-Delivery/AiqFome/aiqfome_erp_plataforma_cardapio_ajuda.PNG" alt=""></div>
+
+<h2 class="aiqfome-h2">Em  AJUDA>Iniciar CHAT  insira as seguintes informações:</h2>
+
+<p class="aiqfome-p">Insira os dados do Cliente e solicite a liberação do campo <span class="aiqfome-destaque">CÓDIGO INTERNO</span></p>
+
+<h1 class="aiqfome-h1">3. Integração entre Produtos e Atributos - ERP CPLUG e Plataforma AIQFOME:</h1>
+<p class="aiqfome-p">Após a liberação do time da plataforma AIQFOME, será necessário coletar as chaves de integração de cada produto e atributo de nosso <span class="aiqfome-destaque">ERP</span> e inseri-las na plataforma <span class="aiqfome-destaque">AIQFOME</span>.</p>
+
+ 
+<h2 class="aiqfome-h2">Caminho da tela abaixo: </h2>
+<h3 class="aiqfome-h3">ERP CPLUG>Estoque>Produtos></h3>
+
+<div class="integração-delivery-img"><img src="src/img/Integração-Delivery/AiqFome/aiqfome_erp_produto1.PNG" alt=""></div>
+
+<h2 class="aiqfome-h2">Clique em  <span class="aiqfome-destaque">EXIBIR A CHAVE DE INTEGRAÇÃO</span> </h2>
+<p class="aiqfome-p">Colete as respectivas chaves de integração de produtos e atributos se houver</p>
+
+<h2 class="aiqfome-h2">Caminho da tela abaixo: </h2>
+<h3 class="aiqfome-h3">Plataforma AIQFOME>Cardápio Padrão>Cardápio>Editar</h3>
+
+<div class="integração-delivery-img"><img src="src/img/Integração-Delivery/AiqFome/aiqfome_produto1.png" alt=""></div>
+
+<h2 class="aiqfome-h2">Clique em  CARDÁPIO PADRÃO>CARDÁPIO>Selecione o produto desejado </h2>
+Insira nos campos  <span class="aiqfome-destaque">CÓDIGO INTERNO</span>  as respectivas chaves de integração
+O que no <span class="aiqfome-destaque">ERP CPLUG</span> entendemos como  <span class="aiqfome-destaque">ATRIBUTO</span> , na plataforma <span class="aiqfome-destaque">AIQFOME</span> será aplicado o termo  <span class="aiqfome-destaque">ADICIONAIS</span> 
+
+<div class="aiqfome-duvidas">
+    <h1 class="aiqfome-h1">Duvidas Comuns</h1>
+    
+    <h2 class="aiqfome-h2">1. Quais são os módulos necessários para utilização da integração com a plataforma AIQFOME?</h2>
+    <p class="aiqfome-p">Módulos Delivery e HUB Delivery.</p>
+    <h2 class="aiqfome-h2">2. É possivel exportar produtos para plataforma AIQFOME?</h2>
+    <p class="aiqfome-p">Não, a integração é feita exclusivamente por chave de integração.</p>
+    <h2 class="aiqfome-h2">3. É possivel integrar todos tipos de produtos?</h2>
+    <p class="aiqfome-p">Sim, todos produtos são integráveis, um detalhe importante: o que entendemos como ATRIBUTO no ERP CPLUG, na plataforma AIQFOME é aplicável o termo ADICIONAIS.</p>
+</div>
+</body>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Direto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="http://www.tibiadb.com/favicon.ico" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kanit&display=swap');      
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+    </style>
+</head>
+
+<header class="cabeça" id="form-header">
+    <div class="menu-contain">
+        <div class="menu-nav">
+         <nav class="links-menu">
+            <a href="autoatendimento.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Autoatendimento</a>
+            <a href="Integrações.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Integrações</a>
+            <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita NFE</a>
+            <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
+            <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
+                KDS</a>
+            <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Business Intelligence</a>
+            <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Programa Fidelidade</a>
+            <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
+            <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz Objeção</a>
+            <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head" rel="noopener noreferrer">Formulário</a>
+         </nav>
+     </div>
+</header>
+<body class="delivery-direto-body">
+    
+    <h1 class="delivery-direto-h1">INTEGRAÇÃO COM DELIVERY DIRETO</h1>
+    
+    <h3 class="delivery-direto-h3">Neste ambiente, o usuário poderá:</h3>
+    <h3 class="delivery-direto-h3">Aprender como integrar ConnectPlug com Delivery Direto.</h3>
+    
+    <p class="delivery-direto-p">Aprender como integrar os produtos do cardápio da ConnectPlug com Delivery Direto, manualmente e através da exportação.</p>
+    <p class="delivery-direto-p">Gerenciar pedidos oriundos do <span class="delivery-direto-destaque">Delivery Direto</span> através do <span class="delivery-direto-destaque">PDV 2.0</span> (pedidos Delivery).</p>
+    
+    <h2 class="delivery-direto-h2">INFORMAÇÕES IMPORTANTES QUE SERÃO NECESSÁRIAS PARA A INTEGRAÇÃO:</h2>
+    
+    <p class="delivery-direto-p">É obrigatória a necessidade dos <span class="delivery-direto-destaque">módulos</span> de <span class="delivery-direto-destaque">Delivery</span> e <span class="delivery-direto-destaque">Integração Delivery</span> para realizar integração com o Delivery Direto.</p>
+    <p class="delivery-direto-p">É importante que possua em seu plano o <span class="delivery-direto-destaque">módulo de Contrato de Cartões</span> para gerenciar os métodos de pagamento que recebe na modalidade online do <span class="delivery-direto-destaque">delivery direto e suas respectivas taxas</span>.</p>
+    
+    <p class="delivery-direto-p">É <span class="delivery-direto-destaque">obrigatória</span> a utilização do PDV 2.0 para utilizar integração com o Delivery Direto. <span class="delivery-direto-destaque">Não é possível utilizar integração do Ifood com o PDV 1</span>.</p>
+        <p class="delivery-direto-p">É possível integrar qualquer tipo de produto (simples, produção automática, processo produtivo e combos) com o Delivery Direto. </p>
+    
+    
+    <h2 class="delivery-direto-h2">1º Passo -> Providenciando os dados para realizar a integração com Delivery Direto.</h2>
+    
+    
+    <div class="delivery-direto-centro"><img class="delivery-direto-img" src="src/img/Integração-Delivery/Delivery-direto/passo-1-providenciando-dados.png" alt=""></img></div>
+    
+    <p class="delivery-direto-p">Acessar a URL: https://www.connectplug.com.br/sistema/integracoes , encontrar a integração referente o Delivery Direto e preencher os dados.</p>
+    
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">1 -</span> <span class="delivery-direto-destaque">Login</span> no Delivery Direto (e-mail que o cliente utiliza para logar no painel administrador do DD)</p>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">2 -</span> <span class="delivery-direto-destaque">Senha</span> no Delivery Direto (senha que o cliente utiliza para logar no painel administrador do DD)</p>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">3 -</span> <span class="delivery-direto-destaque">ID da Integração</span> (gerado aqui , utilizando o ID da loja do cliente).</p>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">4 -</span> <span class="delivery-direto-destaque">Unidade-ID</span> (ID da loja do cliente, possível de localizar dentro do painel administrador do DD do cliente)</p>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">5 -</span> Desativar ou ativar produto ao movimentar estoque? Isso fará com que um produto com <span class="delivery-direto-destaque">estoque zerado se torne invisível no cardápio do Delivery Direto.</span></p>
+    
+    
+    <h2 class="delivery-direto-h2"><span class="delivery-direto-destaque">2 º</span> Passo -> Providenciando a exportação dos produtos para o cardápio do Delivery Direto</h2>
+        <p class="delivery-direto-p">Após ter providenciado a integração com o Delivery Direto, agora é o momento de realizar a exportação do cadastro dos produtos para o cardápio do DD.</p>
+    
+    
+    <div class="delivery-direto-centro"><img class="delivery-direto-img" src="src/img/Integração-Delivery/Delivery-direto/passo-2-providenciando-exportacao.png" alt=""></img></div>
+    
+    <p class="delivery-direto-p">1 - Acessar o módulo de <span class="delivery-direto-destaque">ESTOQUE, no ERP da CPLUG</span>.</p>
+    <p class="delivery-direto-p">2 - Acessar a listagem de PRODUTOS.</p>
+    <p class="delivery-direto-p">3 - Selecionar os produtos que serão exportados para o Delivery Direto.</p>
+    <p class="delivery-direto-p">4 - Clicar em Exportar para Delivery.</p>
+
+    <div class="delivery-direto-centro"><img src="src/img/Integração-Delivery/Delivery-direto/exportacao-para-integracao-delivery.png" alt=""></div>
+
+    <p class="delivery-direto-p">5 - Selecione a integração Delivery Direto.</p>
+    <p class="delivery-direto-p">6 - <span class="delivery-direto-destaque">Dê preferência para a exportação invisível</span>, pois os produtos serão exportados mas ainda não terão entrado oficialmente para venda no cardápio do DD. <span class="delivery-direto-destaque">Assim o cliente pode conferir algum dado antes de ativar e evitar qualquer inconsistência</span>. Clique em Exportar.</p>
+    
+    <p class="delivery-direto-p">Lembrando que os produtos serão exportados com o valor de venda do balcão ou com <span class="delivery-direto-destaque">valor de venda para o Delivery Direto</span>, dependendo do que foi habilitado.</p>
+    
+    
+    <h2 class="delivery-direto-h2"><span class="delivery-direto-destaque">3 º</span> Passo -> Conferindo produtos no Delivery Direto.</h2>
+    
+    <p class="delivery-direto-p">Após ter providenciado a exportação dos produtos pro Delivery Direto, é hora de <span class="delivery-direto-destaque">conferir</span> se os produtos foram exportados corretamente e caso tenha utilizado a função exportação invisível, será necessário ativar estes produtos no cardápio.</p>
+    
+    <p class="delivery-direto-p">Para tal, <span class="delivery-direto-destaque">acesse o portal administrador da loja do cliente no DD</span> -> https://deliverydireto.com.br/admin. </p>
+    
+    
+    <div class="delivery-direto-centro"><img class="delivery-direto-img" src="src/img/Integração-Delivery/Delivery-direto/conferindo-produto-no-dd.png" alt=""></img></div>
+    
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">1 -</span> Acesse o módulo de cardápio. </p>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">2 -</span> Encontre a categoria do produto que exportou. Lembrando que se não havia categoria criada, a exportação fará a criação da categoria de acordo com o cadastro no produto na ConnectPLug.</p>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">3 -</span> Encontre o produto que foi exportado anteriormente. Confira os dados. Caso ele tenha sido exportado na opção invisível, será necessário ativá-lo.</p>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">4 -</span> Clique nos três pontinhos para ativar o produto no cardápio do cliente e este estar disponível para ser vendido.</p>
+    
+    
+    <h2 class="delivery-direto-h2"><span class="delivery-direto-destaque">4 º</span> Passo -> Caso o cliente trabalhe com pagamento online, providenciar a configuração do Contrato de Cartões.</h2>
+    
+    
+    <h2 class="delivery-direto-h2"><span class="delivery-direto-destaque">5 º</span> Passo -> Ativando a integração com Delivery Direto no PDV 2.0.</h2>
+    
+    <div class="delivery-direto-centro"><img class="delivery-direto-img" src="src/img/Integração-Delivery/Delivery-direto/ativando-integracao.png" alt=""></img></div>
+    
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">1 -</span> Acesse a <span class="delivery-direto-destaque">área administrativa no PDV 2</span> e realize login utilizando <span class="delivery-direto-destaque">usuário</span> e <span class="delivery-direto-destaque">senha</span>.</p>
+    
+    <div class="delivery-direto-centro"><img class="delivery-direto-img" src="src/img/Integração-Delivery/Delivery-direto/area-adm-usuario-senha.png" alt=""></img></div>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">2 -</span> Acesse Integrações.</p>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">3 -</span> Acesse Delivery Direto.</p>
+    <p class="delivery-direto-p"><span class="delivery-direto-destaque">4 -</span> Em notificações, habilite-as para receber notificações de pedidos do Delivery Direto no PDV 2.0</p>
+    
+    
+    <h2 class="delivery-direto-h2">Pedido do DD recebido no PDV 2.0</h2>
+    <div class="delivery-direto-centro"><img class="delivery-direto-img" src="src/img/Integração-Delivery/Delivery-direto/pedido-recebido-dd.png" alt=""></img></div>
+    
+    <h2 class="delivery-direto-h2">Impressão após aceitar o pedido:</h2>
+    <div class="delivery-direto-centro"><img class="delivery-direto-img" src="src/img/Integração-Delivery/Delivery-direto/impressao-apos-aceitar-pedido.png" alt=""></div>
+    
+    
+</body>

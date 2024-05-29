@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração Ifood</title>
+    <link rel="stylesheet" href="style.css">
+    
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kanit&display=swap');      
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+</style>
+</head>
+
+<header class="cabeça">
+    <div class="menu-contain">
+        <div class="menu-contain">
+            <div class="menu-nav">
+             <nav class="links-menu">
+                <a href="autoatendimento.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Autoatendimento</a>
+                <a href="Integrações.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Integrações</a>
+                <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita NFE</a>
+                <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
+                <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
+                    KDS</a>
+                <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Business Intelligence</a>
+                <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Programa Fidelidade</a>
+                <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
+                <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz Objeção</a>
+                <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head" rel="noopener noreferrer">Formulário</a>
+             </nav>
+         </div>
+</header>
+
+<iframe src="https://drive.google.com/file/d/1VJnjfJ9xawabZioGj9vVziqzAn57_Anl/preview" width="100%" height="615px"></iframe>
+
+<body class="ifood-body">
+    <h1 class="ifood-h1">Neste ambiente, o usuário poderá:</h1>
+    <h2 class="ifood-h2">Aprender como integrar ConnectPlug com Ifood.</h2>
+    
+    <ol class="ifood-ol">
+        <li class="ifood-li">Aprender como integrar os produtos do cardápio da ConnectPlug com o Ifood, manualmente e através da exportação.</li>
+        <li class="ifood-li">Gerenciar pedidos oriundos Ifood através do PDV 2 (pedidos Delivery).</li>
+        <li class="ifood-li">Emitir uma nota fiscal de um pedido oriundo do Ifood.</li>
+    </ol>
+    
+    
+    <h1 class="ifood-h1">INFORMAÇÕES IMPORTANTES QUE SERÃO NECESSÁRIAS PARA A INTEGRAÇÃO:</h1>
+    
+    <ol class="ifood-ol">
+        <li class="ifood-li">É obrigatória a necessidade dos módulos de Delivery e Integração Delivery para realizar integração com o Ifood.</li>
+        <li class="ifood-li">É importante que possua em seu plano o módulo de Contrato de Cartões para gerenciar os métodos de pagamento que recebe na modalidade online do ifood e suas respectivas taxas.</li>
+        <li class="ifood-li">É obrigatória a utilização do PDV 2.0 para utilizar integração com o Ifood. Não é possível utilizar integração do Ifood com o PDV 1.</li>
+        <li class="ifood-li">É possível integrar qualquer tipo de produto (simples, combo, produção automática e processo produtivo) com o Ifood.</li>
+    
+    </ol>
+    
+    <h1 class="ifood-h1">1º Passo -> Providenciando a integração entre os produtos da ConnectPlug e Ifood.</h1>
+    <p class="ifood-p">Existem duas formas de integrar os produtos da ConnectPlug com o Ifood, a <span class="ifood-destaque">forma manual</span> e pela <span class="ifood-destaque">exportação</span>. Nós falaremos das duas opções a seguir.</p>
+    <p class="ifood-p">Importante constar que nós apenas ensinamos o cliente como realizar este procedimento, ele quem deve seguir com a integração dos produtos.</p>
+    
+    <h1 class="ifood-h1">Integrando os produtos da ConnectPlug com o Ifood manualmente.</h1>
+    
+    <div class="ifood-img"><img src="src/img/Ifood/1.png" alt=""></div>
+    <h2 class="ifood-h2">Acesse a listagem de produtos em sua conta na ConnectPlug:</h2>
+    <h3 class="ifood-h3">Estoque > Produtos.</h3>
+    
+    
+    <p class="ifood-p">1 - Clique no botão de Filtros no canto superior direito.</p>
+    <p class="ifood-p">2 - Clique em Esconder chave de integração para que o sistema mostre as chaves de integração de cada produto e atributos.</p>
+    <p class="ifood-p">3 - Visualize o código de integração que foi exibido. Copie este código e reserve em algum local seguro pois iremos utiliza-lo logo mais.</p>
+    
+    
+    <h2 class="ifood-h2">Acesse o portal do parceiro de sua loja (IFOOD) para fazer a edição/inserção do código de integração no produto no cardápio do Ifood:</h2>
+    <h3 class="ifood-h3">Portal do parceiro > Cardápios > Encontrar o produto que deseja editar ou criar o produto > Editar Item > Detalhes > Código do PDV.</h3>
+    
+    <div class="ifood-img"><img src="src/img/Ifood/2.png" alt=""></div>
+    <p class="ifood-p">4 - Após encontrar o produto que deseja integrar, entre em sua edição para inserir o código de integração (anteriormente copiado na lista de produtos da ConnectPlug) e cole-o no campo Código Pdv. Lembre-se de salvar.</p>
+    
+    <h3 class="ifood-h3">Caso o meu produto tenha complementos (atributos), precisarei realizar o mesmo procedimento com cada atributo.</h3>
+    
+    <h1 class="ifood-h1">Integrando os produtos da ConnectPlug com o Ifood pela exportação.</h1>
+    
+    <div class="ifood-img"><img src="src/img/Ifood/3.png" alt=""></div>
+    
+    <p class="ifood-p">5 - Caso deseje, é possível exportar o cadastro do produto da ConnectPlug, diretamente para o Ifood, utilizando esta opção chamada Exportar para delivery. O nome, categoria, valor de venda, atributos (se houver) serão levados para o Ifood.</p>
+    
+    
+    <div class="ifood-img"><img src="src/img/Ifood/4.png" alt=""></div>
+    <p class="ifood-p">6 - Nesta opção, você irá selecionar qual a integração para exportação. Neste caso, irá selecionar Ifood.</p>
+    <p class="ifood-p">7 - Além disso, você irá selecionar o tipo de exportação que deseja fazer.</p>
+    
+    <p class="ifood-p"><span class="ifood-span-ind">Venda pausada:</span> fará com que os produtos entrem no cardápio do Ifood pausados, ou seja, eles não serão exibidos no cardápio oficial. Se selecionar esta opção, será necessário ativá-los no cardápio do Ifood para que sejam exibidos para compra.</p>
+    
+    <p class="ifood-p"><span class="ifood-span-ind">Disponível para venda:</span> fará com que os produtos entrem no cardápio oficial do Ifood, estando disponíveis para o cliente final adquirir.</p>
+    <p class="ifood-p">8 - Clique em Exportar para que o cadastro dos produtos sejam levados para o Ifood.</p>
+    
+    <p class="ifood-p">Se o cadastro do produto estiver com  <span class="ifood-span-ind">Valor de Venda Ifood</span>, será este valor de venda que será exportado para o cardápio do Ifood.</p>
+    
+    <div class="ifood-img"><img src="src/img/Ifood/5.png" alt=""></div>
+    
+    <h3 class="ifood-h3">2º Passo -> Providenciando a configuração do contrato de cartões.</h3>
+    <p class="ifood-p">Acesse o módulo Financeiro e entre na modalidade de contratos de cartões e outros.</p>
+    <p class="ifood-p">Você irá precisar um módulo de contrato de cartões específico para o recebimento do Ifood (online), caso trabalhe com esta modalidade.</p>
+    
+    
+    <div class="ifood-img"><img src="src/img/Ifood/9-18.png" alt=""></div>
+    
+    <p class="ifood-p">9 - Aqui você irá dar um nome que identifique este contrato de cartões à integração com o Ifood.</p>
+    <p class="ifood-p">10 - Em provedor, você irá escolher Ifood.</p>
+    <p class="ifood-p">11 - Aqui você irá selecionar a conta bancária na qual as vendas realizadas no Ifood entrarão.</p>
+    <p class="ifood-p-ind">Lembre-se de que você pode cadastrar uma nova conta bancária em: </p>
+    <h3 id="ifood-h3-ind">Financeiro > Contas bancárias.</h3>
+    <p class="ifood-p">12 - Ao clicar em ATIVO, esta configuração passará a valer.</p>
+    <p class="ifood-p">13 - Ao escolher a modalidade agrupamento automático, os valores vendidos durante o dia todo, entrarão agrupados na forma de uma única entrada.</p>
+    <p class="ifood-p">14 - Ao escolher a opção de definir como pago todas as entradas nesse método, os agrupamentos já entrarão com o valor recebido no contas a receber, dentro do módulo financeiro.</p>
+    <p class="ifood-p">15 - As vendas online realizadas pelo Ifood entrarão na ConnectPlug como cartão de crédito.</p>
+    <p class="ifood-p-ind">Portanto é apenas necessário realizar uma configuração de cartão de crédito.</p>
+    <p class="ifood-p">16 - Em bandeira, pode escolher a opção de não se aplica, pois não haverá distinção na integração.</p>
+    <p class="ifood-p">17 - Aqui você irá configurar a taxa que o Ifood cobrará de seu estabelecimento. É importante configurar esta opção para que os valores entrem no contas a receber com o débito da taxa, assim como acontece na vida real.</p>
+    <p class="ifood-p">18 - Aqui você pode definir 0 dias para pagamento. Assim os valores vendidos (contas a receber) entrarão com a data de vencimento igual a data em que ela foi realizada (data de competência) e isso pode facilitar na busca por estes lançamentos, dentro do módulo financeiro.</p>
+    
+    <h2 class="ifood-h2">Salve as configurações e o módulo estará configurado.</h2>
+    
+    <h3 class="ifood-h3">3º Passo -> Providenciando os dados para realizar integração.</h3>
+    <p class="ifood-p">Você irá precisar acionar o suporte técnico para providenciar alguns dados para inserir nesta etapa.</p>
+    <p class="ifood-p">Abra o portal do parceiro Ifood junto com o cliente (remotamente). No menu lateral esquerdo, clique em chamados e inicie um novo chat com o suporte deles.</p>
+    <p class="ifood-p">Solicitaremos: <span class="ifood-span-ind">Usuário, Senha e Merchant Id</span>. Também pediremos que eles tornem o gestor de pedidos do cliente no modo apenas visualizador. </p>
+    <p class="ifood-p">19 - Acesse <a href="https://www.connectplug.com.br/sistema/integracoes" target="_blank" rel="noreferrer">https://www.connectplug.com.br/sistema/integracoes</a> Encontre a integração com o Ifood e clique em editar para inserir as informações pertinentes.</p>
+    
+    <div class="ifood-img"><img src="src/img/Ifood/7.png" alt=""></div>
+    <p class="ifood-p">20 - Insira o usuário que o suporte técnico do Ifood lhe informou.</p>
+    <p class="ifood-p">21 - Insira a senha que o suporte técnico do Ifood lhe informou.</p>
+    <p class="ifood-p">22 - Até o momento em que este tutorial é criado (01/03/21), esta funcionalidade não impacta de fato na integração. Então pode escolher o método Cartão de Crédito.</p>
+    <p class="ifood-p">23 - Escolha o restaurante que está integrando com esta conta no Ifood.</p>
+    <p class="ifood-p">24 - Insira o Merchant Id que o suporte técnico do Ifood lhe informou.</p>
+    
+    <p class="ifood-p">Salve, Após realizar estes procedimentos, a integração estará ativa.</p>
+    <h3 class="ifood-h3">4º Passo -> Sincronizando o PDV 2 e habilitando notificações.</h3>
+    
+    <p class="ifood-p">Após realizar todos estes procedimentos, sincronize o PDV 2 para que todas as modificações realizadas no ERP sejam trazidas para o PDV. </p>
+    
+    
+    <div class="ifood-img"><img src="src/img/Ifood/8.png" alt=""></div>
+    
+    <p class="ifood-p">25 - Clique no menu lateral esquerdo do PDV 2 e entre na área administrativa com seu usuário e senha.</p>
+    
+    <div class="ifood-img"><img src="src/img/Ifood/9.png" alt=""></div>
+    <p class="ifood-p">26 - Habilite as notificações para os pedidos do Ifood.</p>
+    
+    <div class="ifood-img"><img src="src/img/Ifood/10.png" alt=""></div>
+    <p class="ifood-p">27- Em Notificações, habilite para receber as notificações e poderá também gerenciar os sons das notificações.</p>
+    
+    <h3 class="ifood-h3">5º Passo -> Solicitar venda teste para o suporte técnico do Ifood.</h3>
+    
+    <h3 class="ifood-h3">Você precisará voltar para o chat técnico do Ifood e solicitar uma venda teste na loja do cliente para conferir se o pedido entrará diretamente em Pedidos Delivery (PDV 2).</h3>
+    
+    
+    
+    <h1 class="ifood-h1">DÚVIDAS E ERROS COMUNS QUE IMPACTAM A INTEGRAÇÃO:</h1>
+    
+    <h4 class="ifood-h4">A chave de integração entre os produtos do Ifood e ConnectPlug não são as mesmas. Importante conferir sempre.</h4>
+    <h4 class="ifood-h4">O gestor de pedidos não está configurado para ser APENAS LEITURA.</h4>
+    <h4 class="ifood-h4">O Ifood não habilitou a integração para o próprio Ifood. Essa é uma configuração realizada por parte do Ifood. Importante confirmar se está habilitada.</h4>
+    <h4 class="ifood-h4">Recebo do Ifood toda terça-feira do mês, como faço para controlar isso no meu sistema?</h4>
+    <p class="ifood-p">R: No contrato de cartões, configurar o recebimento para 0 (zero) dias e não habilitar o recebimento automático. Toda terça-feira do mês, realizar um filtro buscando os recebimentos provenientes do Ifood, selecionar os que forem exibidos e marcar como recebido.</p>
+    
+    <h4 class="ifood-h4">Como posso emitir a nota fiscal para o clientes, antes de o entregador sair da loja? Para que o cliente receba a nota fiscal impressa?</h4>
+    <p class="ifood-p">
+    R: O cliente precisa obrigatoriamente utilizar a logística Ifood com pagamento online. Antes de mandar o pedido, mudar o status para entregue. O status não será modificado para o cliente e você conseguirá emitir a nota fiscal.
+    Em caso contrário, somente conseguirá enviar a nota fiscal por e-mail.
+    </p>
+</body>

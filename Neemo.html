@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neemo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kanit&display=swap');      
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+    </style>
+</head>
+
+<header class="cabeça" id="form-header">
+    <div class="menu-contain">
+        <div class="menu-nav">
+         <nav class="links-menu">
+            <a href="autoatendimento.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Autoatendimento</a>
+            <a href="Integrações.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Integrações</a>
+            <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita NFE</a>
+            <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
+            <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
+                KDS</a>
+            <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Business Intelligence</a>
+            <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Programa Fidelidade</a>
+            <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
+            <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz Objeção</a>
+            <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head" rel="noopener noreferrer">Formulário</a>
+         </nav>
+     </div>
+</header>
+
+<iframe width="100%" height="615" src="https://www.youtube.com/embed/OCFvN9oyjG0?si=4dSxLLS3JgEZNR9T"></iframe>
+
+<body class="neemo-body">
+    
+<h1 class="neemo-h1">Beneficios da integração:</h1>
+
+<div class="neemo-centro">
+    <ol class="neemo-ol">
+        <li class="neemo-li">Ter integração com plataforma de delivery próprio;</li>
+        <li class="neemo-li">Pedidos serem gerenciados pelo PDV da ConnectPlug.</li>
+        <li class="neemo-li">Sempre que os pedidos forem feitos pela Neemo, ficarão na aba "Pedidos Delivery" do PDV.</li>
+    </ol>
+</div>
+
+<h1 class="neemo-h1">Processo de integração:</h1>
+
+<div class="neemo-centro">
+    <ol class="neemo-ol">
+        <li class="neemo-li">Entrar na Neemo (no ambiente antigo)</li>
+        <li class="neemo-li">Configurações > Integração</li>
+        <li class="neemo-li">Criar Token</li>
+        <li class="neemo-li">Copiar Código do Token</li>
+        <li class="neemo-li">Entrar no ERP da ConnectPlug</li>
+        <li class="neemo-li">Engrenagem > Integrações</li>
+        <li class="neemo-li">Clicamos em editar a integração da Neemo</li>
+        <li class="neemo-li">Colamos o Código do Token copiado na Neemo</li>
+        <li class="neemo-li">Selecione o método de pagamento utilizado para pagamento online</li>
+        <li class="neemo-li">Clicamos em Salvar.</li>
+    </ol>
+</div>
+
+<p class="neemo-p">
+    obs: O Neemo Permite que os pedidos sejam pagos diretamente pelo app.
+    È interessante criar um método de pagamento pelo financeiro da Cplug com o nome de Neemo, para posteriormente poder identificar com mais facilidade.
+</p>
+
+<h2 class="neemo-h2">Primeira Etapa da Integração esta Completa</h2>
+
+<h2 class="neemo-h2">Agora devemos fazer o processo de integração do cardapio</h2>
+
+<h1 class="neemo-h1">Integração do Cardápio do tipo Simples</h1>
+
+<div class="neemo-centro">
+    <ol class="neemo-ol">
+        <li class="neemo-li">Entramos no ERP Cplug</li>
+        <li class="neemo-li">clicamos em Estoque > Produto</li>
+        <li class="neemo-li">Copiamos o Código de Integração.</li>
+        <li class="neemo-li">Entramos na Plataforma nova da Neemo</li>
+        <li class="neemo-li">Adicionar Novo produto</li>
+        <li class="neemo-li">Digite nome do produto, coloque a categoria do produto.</li>
+        <li class="neemo-li">Digite Còdigo PDV, que será o Código de Integração copiado no ERP Cplug</li>
+        <li class="neemo-li">Clicamos em Salvar</li>
+        <li class="neemo-li">Sincronizar PDV.</li>
+    </ol>
+</div>
+
+<h1 class="neemo-h1">Integração do Cardápio do tipo Combo </h1>
+
+<div class="neemo-centro">
+    <ol class="neemo-ol">
+        <li class="neemo-li">Entramos no ERP Cplug</li>
+        <li class="neemo-li">clicamos em Estoque > Produto</li>
+        <li class="neemo-li">Copiamos o Código de Integração.</li>
+        <li class="neemo-li">Entramos na Plataforma nova da Neemo</li>
+        <li class="neemo-li">Adicionar Novo produto</li>
+        <li class="neemo-li">Digite nome do produto, coloque a categoria do produto.</li>
+        <li class="neemo-li">Digite Còdigo PDV, que será o Código de Integração copiado no ERP Cplug</li>
+        <li class="neemo-li">Clicamos em Salvar</li>
+        <li class="neemo-li">Sincronizar PDV.</li>
+    </ol>
+</div>
+
+<h1 class="neemo-h1">Integração de produtos com Atributos</h1>
+
+<div class="neemo-centro">
+    <ol class="neemo-ol">
+        <li class="neemo-li">Entramos no ERP Cplug</li>
+        <li class="neemo-li">clicamos em Estoque > Produto > Novo Produto</li>
+        <li class="neemo-li">Coloque Nome, SKU, Categoria</li>
+        <li class="neemo-li">Em Informar Atributos > Cadastrar atribudos</li>
+        <li class="neemo-li">Cada opção terá nome e Código de Integração</li>
+        <li class="neemo-li">Copie o Còdigo de Integração</li>
+        <li class="neemo-li">Entramos na Plataforma nova da Neemo</li>
+        <li class="neemo-li">Colocamos categória, nome do produto</li>
+        <li class="neemo-li">Colocamos o código de Integração do produto base (é o do produto, não do atributo)</li>
+        <li class="neemo-li">Clicamos no + para adicionar variação</li>
+        <li class="neemo-li">Colocamos Nome, Código de Variação (do lado da Cplug chamamos de Código de Atributo) e Preço.</li>
+        <li class="neemo-li">Clicamos em Salvar</li>
+        <li class="neemo-li">Sincronizar PDV.</li>
+    </ol>
+</div>
+
+
+<h1 class="neemo-h1">Integração de produtos do tipo Pizza</h1>
+
+<div class="neemo-centro">
+    <ol class="neemo-ol">
+        <li class="neemo-li">Entrar na Neemo (no ambiente antigo)</li>
+        <li class="neemo-li">Categorias > Nova Categoria</li>
+        <li class="neemo-li">Coloque nome e Marcar caixinha "Pizza"</li>
+        <li class="neemo-li">Salvamos</li>
+    </ol>
+</div>
+
+<h1 class="neemo-h1">Criar os Tamanhos de Pizza</h3>
+
+<div class="neemo-centro">
+    <ol class="neemo-ol">
+        <li class="neemo-li">Cardapio > Pizza - Tamanhos</li>
+        <li class="neemo-li">Clicamos em Novo Tamanho</li>
+        <li class="neemo-li">Colocamos Nome</li>
+        <li class="neemo-li">Definimos quantos sabores este tamanho irá aceitar</li>
+        <li class="neemo-li">Para conseguirmos o código de integração deste produto devemos:</li>
+        <li class="neemo-li">Entrar no ERP Cplug</li>
+        <li class="neemo-li">Estoque > Produtos > Novo produto</li>
+        <li class="neemo-li">Colocamos Nome do Tamanho da Pizza, exemplo "Pizza Pequena"</li>
+        <li class="neemo-li">Copiamos "Chave de Integração"</li>
+        <li class="neemo-li">Voltamos na Neemo (no ambiente Antigo)</li>
+        <li class="neemo-li">Colamos Chave de Integração no Campo "Ref"</li>
+    </ol>
+</div>
+
+<h1 class="neemo-h1">Agora devemos criar os Sabores de Pizza</h1>
+
+<div class="neemo-centro">
+    <ol class="neemo-ol">
+        <li class="neemo-li">Cardapio > Pizza - Sabores</li>
+        <li class="neemo-li">Colocamos o nome do Sabor da Pizza</li>
+        <li class="neemo-li">Colocamos o Valor da Pizza com o Sabor</li>
+        <li class="neemo-li">Para conseguirmos o código de integração deste produto devemos:</li>
+        <li class="neemo-li">Entrar no ERP Cplug</li>
+        <li class="neemo-li">Estoque > Produtos > Selecionamos o Tamanho da Pizza</li>
+        <li class="neemo-li">Na Parte de Atributos, Criamos um Atributo Chamado "Sabor de Pizzas"</li>
+        <li class="neemo-li">Adicionamos a Variação de Sabores, podendo ser mais de uma variação para o determinado tamanho.</li>
+        <li class="neemo-li">Definimos o Valor da Variação.</li>
+        <li class="neemo-li">Copiamos a "Chave de Integração" e Salvamos.</li>
+        <li class="neemo-li">Voltamos na Neemo (no ambiente antigo)</li>
+        <li class="neemo-li">Colamos a chave de integração no Campo "COD PDV"</li>
+    </ol>
+</div>
+
+
+<h1 class="neemo-h1">Integração de produtos para Extra de Pizzas</h1>
+
+<div class="neemo-centro">
+    <ol class="neemo-ol">
+        <li class="neemo-li">Entrar na Neemo (no ambiente antigo)</li>
+        <li class="neemo-li">Cardapio > Extra de Pedidos</li>
+        <li class="neemo-li">Clicamos em "Novo Extra do Pedido"</li>
+        <li class="neemo-li">Devemos Preencher: Nome, Minimo, Máximo, Ordem</li>
+        <li class="neemo-li">Habilitamos a Caixinha de "Ativo"</li>
+        <li class="neemo-li">Na parte de "Itens Adicionais", Colocamos o Nome do Adicional, Valor e "Ref"</li>
+        <li class="neemo-li">Para conseguimros o Còdigo de Integração deste produto devemos:</li>
+        <li class="neemo-li">Entrar no ERP Cplug</li>
+        <li class="neemo-li">Estoque > Produtos > Novo Produto Simples</li>
+        <li class="neemo-li">Colocamos o Nome, Valor, Categoria e Copiamos a Chave de Integração</li>
+        <li class="neemo-li">Voltamos na Neemo (no ambiente antigo)</li>
+        <li class="neemo-li">Colamos a Chave de Integração no campo "Ref"</li>
+        <li class="neemo-li">Habilitamos a Caixinha de "Ativo"</li>
+    </ol>
+</div>
+
+<h1 class="neemo-h1">Excelente! Você aprendeu a fazer todos os tipos de integração de produto para a plataforma de delivery Neemo.</h1>
+
+
+<h1 class="neemo-h1">Não existe exportação de cardápio para Neemo, apenas importação manual.</h1>
+
+
+<h1 class="neemo-h1">Duvidas</h1>
+<h3 class="neemo-h3-duvidas">È possivel deixar um preço na Neemo, diferente do preço da loja física?</h3>
+<p class="neemo-p-duvidas">Sim</p>
+
+
+
+
+
+</body>

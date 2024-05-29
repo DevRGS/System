@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="http://www.tibiadb.com/favicon.ico" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kanit&display=swap');      
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+    </style>
+</head>
+
+<header class="cabeça">
+    <div class="menu-contain">
+       <div class="menu-nav">
+        <nav class="links-menu">
+            <a href="autoatendimento.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Autoatendimento</a>
+            <a href="Integrações.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Integrações</a>
+            <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita NFE</a>
+            <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
+            <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
+                KDS</a>
+            <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Business Intelligence</a>
+            <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Programa Fidelidade</a>
+            <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
+            <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz Objeção</a>
+            <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head" rel="noopener noreferrer">Formulário</a>
+        </nav>
+    </div>
+</header>
+
+<iframe width="100%" height="615px" src="https://drive.google.com/file/d/1P1Xo8b94ZecECUws3HrtI0IJQIaS7GeZ/preview"></iframe>
+
+<body class="rappi-body">
+
+<h1 class="rappi-h1">TUDO QUE PRECISAMOS SABER SOBRE INTEGRAÇÃO COM A RAPPI:</h1>
+
+<h1 class="rappi-h1">MÓDULOS NECESSÁRIOS</h1>
+
+<h2 class="rappi-h2">1 - DELIVERY</h2>
+<h2 class="rappi-h2">2 - INTEGRAÇÃO DELIVERY</h2>
+
+<h2 class="rappi-h2">NECESSARIO: PDV 2.0</h2>
+<h2 class="rappi-h2">NECESSARIO: VERSÃO 2.5.1 ou SUPERIOR</h2>
+<div class="rappi-p-container"></div>
+
+<div class="rappi-distancia-top">
+    <p class="rappi-p" >Quando cliente ja tem uma conta RAPPI, é apenas uma conta simples, sem integração com sistemas PDV no sistema da Rappi, e para começar a integrar precisamos seguir os seguintes passos:</p>
+</div>
+
+<div class="rappi-distancia-top">
+    <p class="rappi-p-destaque" ><span class="rappi-centro">Dependemos da Rappi para integrar e fazer pedido teste.</p>
+</div>
+
+
+<h1 class="rappi-h1">1° Passo - ENVIAR DADOS DO LOJISTA NO GRUPO DO WHATSAPP DA RAPPI</h1>
+
+<ul class="rappi-ul">
+    <li class="rappi-li">Empresa:</li>
+    <li class="rappi-li">CNPJ:</li>
+    <li class="rappi-li">CEP:</li>
+    <li class="rappi-li">Endereço:</li>
+    <li class="rappi-li">Bairro:</li>
+    <li class="rappi-li">Cidade/UF:</li>
+    <li class="rappi-li">O e-mail da loja no Rappi (exemplo:XXXX@rappi.com)</li>
+</ul>
+
+<h1 class="rappi-h1">2° Passo - SOLICITAR CARDÁPIO TESTE DO CLIENTE</h1>
+<h1 class="rappi-h1">3° Passo - SOLICITAR CREDENCIAL DE INTEGRAÇÃO</h1>
+
+
+<p class="rappi-p">Obrigatóriamente antes de solicitar as credenciais no grupo, o cliente precisa definir qual modelo de integração deseja realizar, são elas:</p>
+
+<h1 class="rappi-h1">Menu automático</h1>
+
+    <div class="rappi-p-container">
+        <p class="rappi-p">É quando a integração envia o menu (os produtos) via API de integração (igual processo do ifood).</p>
+        <p class="rappi-p">Obs: Esse formato é utilizado para aqueles clientes que ainda não trabalham com RAPPI, e preferem exportar o cardapio de seu sistema.</p>
+        <p class="rappi-p">sempre que cadastrar um novo produto, será enviado via integraçaõa (melhor opção).</p>
+    </div>
+
+
+<h1 class="rappi-h1">Self Mapping</h1>
+
+    <div class="rappi-p-container">
+        <p class="rappi-p">É quando o cliente cadastra os produtos e categorias manualmente pelo portal partners (https://partners.rappi.com/), e insere o SKU (codigo de integração) manualmente.</p>
+        <p class="rappi-p">Obs: Neste cenário, toda vez que cadastrar um novo produto no ConnectPlug, será necessario cadastra-lo manualmente no portal "partners" da RAPPI e vincular o codigo de integração (opção menus recomnedada por ter mais marges de erros);</p>
+    </div>
+
+
+<h1 class="rappi-h1">PROCESSO DE INTEGRAÇÃO POR SELF MAPPING</h1>
+
+<h2 class="rappi-h2">1° PASSO - Acessando o link: https://partners.rappi.com/</h2>
+<h2 class="rappi-h2">2° PASSO - Clique em "Menu/Cardapio"</h2>
+<h2 class="rappi-h2">3° PASSO - Clique em algum produto e digite o SKU</h2>
+<h2 class="rappi-h2">4° PASSO - Após digitar o SKU, clique em Salvar Mudanças</h2>
+
+<h1 class="rappi-h1">Para Incluir o produto nos Toppings</h1>
+
+<h2 class="rappi-h2">1° PASSO - Para incluir o SKU no topping, deve-se clicar no lápis.</h2>
+<h2 class="rappi-h2">2° PASSO - Incluir o SKU, e clicar em “editar topping”</h2>
+<h2 class="rappi-h2">3° PASSO - Após todo preenchimento dos skus, clicar em “enviar para revisão”</h2>
+
+<h1 class="rappi-h1">Processo feito!</h1>
+
+
+<h3 class="rappi-h3">Manual de cadastro de produto para seguir as normas da RAPPI </h3>
+
+<object data="src/img/Integração-Delivery/Rappi/[BR] Guia Menu automatico - Playbook Catálogo..pptx.pdf" type="application/pdf" width="100%" height="615px"></object>
+
+
+</body>

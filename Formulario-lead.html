@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busque a Excelência</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="http://www.tibiadb.com/favicon.ico" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+    </style>
+
+    <script> //Salva dados escritos, mesmo após atualizar pagina
+        document.addEventListener('DOMContentLoaded', function () {
+            // Recupera os dados do armazenamento local e preenche os campos
+            function carregarDados() {
+                // Itera sobre todos os elementos de input e textarea
+                document.querySelectorAll('input, textarea').forEach(function (elemento) {
+                    // Verifica se há dados salvos no armazenamento local para este elemento
+                    if (localStorage.getItem(elemento.name)) {
+                        // Preenche o valor do elemento com os dados salvos
+                        elemento.value = localStorage.getItem(elemento.name);
+                    }
+                });
+            }
+
+            // Salva os dados dos campos no armazenamento local
+            function salvarDados() {
+                // Itera sobre todos os elementos de input e textarea
+                document.querySelectorAll('input, textarea').forEach(function (elemento) {
+                    // Salva o valor do elemento no armazenamento local
+                    localStorage.setItem(elemento.name, elemento.value);
+                });
+            }
+
+            // Adiciona um ouvinte para o evento de mudança em campos de input e textarea
+            document.querySelectorAll('input, textarea').forEach(function (elemento) {
+                elemento.addEventListener('change', salvarDados);
+            });
+
+            // Carrega os dados quando a página é carregada
+            carregarDados();
+        });
+    </script>
+</head>
+
+
+<header class="cabeça" id="form-header">
+    <div class="menu-contain">
+        <div class="menu-nav">
+            <nav class="links-menu">
+                <a href="autoatendimento.html" target="_self" class="itens-menu-nav"
+                    rel="noopener noreferrer">Autoatendimento</a>
+                <a href="Integrações.html" target="_self" class="itens-menu-nav"
+                    rel="noopener noreferrer">Integrações</a>
+                <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita
+                    NFE</a>
+                <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
+                <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
+                    KDS</a>
+                <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav"
+                    rel="noopener noreferrer">Business Intelligence</a>
+                <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav"
+                    rel="noopener noreferrer">Programa Fidelidade</a>
+                <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
+                <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz
+                    Objeção</a>
+                <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head"
+                    rel="noopener noreferrer">Formulário</a>
+            </nav>
+        </div>
+</header>
+
+
+<body id="form-body">
+
+
+
+    <form id="client-form">
+
+        <div class="client form-01">
+            <div class="form-elements">
+                <fieldset class="fieldset-block"> <!-- DADOS DO CLIENTE -->
+                    <legend class="titulos">DADOS DO CLIENTE</legend>
+                    <label class="form-label" data-inputname="Nome">Nome:</label>
+                    <input type="text" class="form-inputs" name="Nome"><br>
+
+                    <label class="form-label" data-inputname="Telefone">Telefone:</label>
+                    <input type="text" class="form-inputs" name="Telefone"><br>
+
+                    <label class="form-label form-label-color" data-inputname="Segmento">Segmento:</label>
+                    <input type="text" class="form-inputs" name="Segmento"><br>
+
+                    <label class="form-label form-label-color" data-inputname="Estado">Estado:</label>
+                    <input type="text" class="form-inputs" name="Estado"><br>
+
+                    <label class="form-label form-label-color" data-inputname="Tem sistema">Tem Sistema:</label>
+                    <input type="text" class="form-inputs" name="Tem sistema"><br>
+
+                    <label class="form-label" data-inputname="Número de Lojas">Número de Lojas:</label>
+                    <input type="text" class="form-inputs" name="Número de Lojas"><br>
+
+                    <label class="form-label form-label-color" data-inputname="Emissão Fiscal">Emissão Fiscal:</label>
+                    <input type="text" class="form-inputs" name="Emissão Fiscal"><br>
+
+                    <label class="form-label form-label-color" data-inputname="Expectativa de Investimento">Tem
+                        Budget:</label>
+                    <input type="text" class="form-inputs" name="Expectativa de Investimento"><br>
+
+                    <label class="form-label form-label-color" data-inputname="Tem Funcionarios">Tem
+                        Funcionarios:</label>
+                    <input type="text" class="form-inputs" name="Tem Funcionarios"><br>
+
+                    <label class="form-label form-label-color" data-inputname="Tem Socios">Tem sócios:</label>
+                    <input type="text" class="form-inputs" name="Tem Socios"><br>
+
+                    <label class="form-label form-label-color" data-inputname="Total de PDVs">Total PDV's:</label>
+                    <input type="text" class="form-inputs" name="Total de PDVs"><br>
+
+                    <label class="form-label form-label-color" data-inputname="Trabalha com Serviço">Trabalha com
+                        Serviço:</label>
+                    <input type="text" class="form-inputs" name="Trabalha com Serviço"><br>
+
+                    <label class="form-label" data-inputname="Trabalha com Serviço">Perfil do Lead:</label>
+                    <input type="text" class="form-inputs" name="Perfil do Lead"><br>
+
+                </fieldset>
+            </div>
+
+            <div class="form-elements">
+                <fieldset class="fieldset-block"> <!-- COMO FAZ ATENDIMENTO? -->
+                    <legend class="titulos">COMO FAZ O ATENDIMENTO?</legend>
+                    Presencial: <input type="text" class="form-inputs" name="Presencial"><br>
+                    Tel-Fixo: <input type="text" class="form-inputs" name="Tel-Fixo"><br>
+                    Whatsapp: <input type="text" class="form-inputs" name="Whatsapp"><br>
+                    Instagram: <input type="text" class="form-inputs" name="Instagram"><br>
+                    Vendedores: <input type="text" class="form-inputs" name="Vendedores"><br>
+                    Tray: <input type="text" class="form-inputs" name="Tray"><br>
+                    Ifood: <input type="text" class="form-inputs" name="Ifood"><br>
+                    Shopee: <input type="text" class="form-inputs" name="Shopee"><br>
+                    Site Próprio: <input type="text" class="form-inputs" name="Site Próprio"><br>
+                    E-Commerce: <input type="text" class="form-inputs" name="E-Commerce"><br>
+                    Delivery Direto: <input type="text" class="form-inputs" name="Delivery Direto"><br>
+                    AnotaAI: <input type="text" class="form-inputs" name="AnotaAI"><br>
+                    Neemo: <input type="text" class="form-inputs" name="Neemo"><br>
+                    Accon: <input type="text" class="form-inputs" name="Accon"><br>
+                    AiqFome: <input type="text" class="form-inputs" name="AiqFome"><br>
+                    Alloy Delivery: <input type="text" class="form-inputs" name="AlloyDelivery"><br>
+                    Rappi: <input type="text" class="form-inputs" name="Rappi"><br>
+                </fieldset>
+            </div>
+
+            <div class="form-elements">
+                <fieldset class="fieldset-block"> <!-- DEMONSTROU INTERESSE -->
+                    <legend class="titulos">DEMONSTROU INTERESSE</legend>
+                    <label class="form-label" data-inputname="Abertura API">Abertura de API:</label>
+                    <input type="text" class="form-inputs" name="Abertura API"><br>
+
+                    <label class="form-label" data-inputname="Autoatendimento">Autoatendimento:</label>
+                    <input type="text" class="form-inputs" name="Autoatendimento"><br>
+
+                    <label class="form-label" data-inputname="Cardapio Digital">Cardápio Digital:</label>
+                    <input type="text" class="form-inputs" name="Cardapio Digital"><br>
+
+                    <label class="form-label" data-inputname="Estoque em Grade">Estoque em Grade:</label>
+                    <input type="text" class="form-inputs" name="Estoque em Grade"><br>
+
+                    <label class="form-label" data-inputname="Facilita NFE">Facilita NFE:</label>
+                    <input type="text" class="form-inputs" name="Facilita NFE"><br>
+
+                    <label class="form-label" data-inputname="Importação XML">Importação XML:</label>
+                    <input type="text" class="form-inputs" name="Importação XML"><br>
+
+                    <label class="form-label" data-inputname="Integração Bling">Integração Bling:</label>
+                    <input type="text" class="form-inputs" name="Integração Bling"><br>
+
+                    <label class="form-label" data-inputname="Integração Delivery">Integração Delivery:</label>
+                    <input type="text" class="form-inputs" name="Integração Delivery"><br>
+
+                    <label class="form-label" data-inputname="Integração TAP">Integração TAP:</label>
+                    <input type="text" class="form-inputs" name="Integração TAP"><br>
+
+                    <label class="form-label" data-inputname="Maquina POS">Maquina POS:</label>
+                    <input type="text" class="form-inputs" name="Maquina POS"><br>
+
+                    <label class="form-label" data-inputname="Maquina Smart">Maquina Smart:</label>
+                    <input type="text" class="form-inputs" name="Maquina Smart"><br>
+
+                    <label class="form-label" data-inputname="Mesas e Comandas">Mesas e Comandas:</label>
+                    <input type="text" class="form-inputs" name="Mesas e Comandas"><br>
+
+                    <label class="form-label" data-inputname="Módulo de Produção">Modulo de Produção:</label>
+                    <input type="text" class="form-inputs" name="Módulo de Produção"><br>
+
+                    <label class="form-label" data-inputname="Monitor KDS">Monitor KDS:</label>
+                    <input type="text" class="form-inputs" name="Monitor KDS"><br>
+
+                    <label class="form-label" data-inputname="NFE Ilimitadas">NFE Ilimitadas:</label>
+                    <input type="text" class="form-inputs" name="NFE Ilimitadas"><br>
+
+                    <label class="form-label" data-inputname="Painel de Senha">Painel de Senha:</label>
+                    <input type="text" class="form-inputs" name="Painel de Senha"><br>
+
+                    <label class="form-label" data-inputname="Painel Multi-Filiais">Painel Multi-Filiais:</label>
+                    <input type="text" class="form-inputs" name="Painel Multi-Filiais"><br>
+
+                    <label class="form-label" data-inputname="Power B.I">Power B.I:</label>
+                    <input type="text" class="form-inputs" name="Power B.I"><br>
+
+                    <label class="form-label" data-inputname="Programa de Fidelidade">Programa de Fidelidade:</label>
+                    <input type="text" class="form-inputs" name="Programa de Fidelidade"><br>
+
+                    <label class="form-label" data-inputname="Real Time">Real Time:</label>
+                    <input type="text" class="form-inputs" name="Real Time"><br>
+
+                    <label class="form-label" data-inputname="Relatório KDS">Relatório KDS:</label>
+                    <input type="text" class="form-inputs" name="Relatório KDS"><br>
+
+                    <label class="form-label" data-inputname="Relatório Dinâmico">Relatório Dinâmico</label>
+                    <input type="text" class="form-inputs" name="Relatório Dinâmico"><br>
+
+                    <label class="form-label" data-inputname="Smart Menu">Smart Menu:</label>
+                    <input type="text" class="form-inputs" name="Smart Menu"><br>
+
+                    <label class="form-label" data-inputname="TEF">TEF:</label>
+                    <input type="text" class="form-inputs" name="TEF"><br>
+
+
+                </fieldset>
+
+            </div>
+
+            <div class="form-elements"> <!-- CHECKBOXES -->
+                <fieldset class="fieldset-block">
+                    <legend class="titulos">MSG. PRONTAS.</legend>
+                    <label class="form-label-check">
+                        <input type="checkbox" class="form-inputs" name="Plano básico:" id="mensagemAtendimento">Passei
+                        Valor do Plano básico
+                    </label><br>
+                    <label class="form-label-check">
+                        <input type="checkbox" class="form-inputs" name="AutoatendimentoCheck:"
+                            id="mensagemAtendimento">Passei Valor do Autoatendimento
+                    </label><br>
+                    <label class="form-label-check">
+                        <input type="checkbox" class="form-inputs" name="Mini-cpu:" id="mensagemAtendimento">Passei
+                        Valor da Mini-Cpu
+                    </label><br>
+                    <label class="form-label-check">
+                        <input type="checkbox" class="form-inputs" name="servicosNF:" id="mensagemAtendimento">Avisei
+                        sobre NF de Serviços
+                    </label><br>
+                    <label class="form-label-check">
+                        <input type="checkbox" class="form-inputs" name="nfSC:" id="mensagemAtendimento">Avisei sobre NF
+                        em SC.
+                    </label><br>
+                </fieldset>
+
+                <fieldset class="fieldset-block"> <!-- EXTRAS -->
+                    <legend class="titulos">EXTRAS</legend>
+                    <label class="form-label" data-inputname="PDV no Computador">PDV No Computador:</label>
+                    <input type="text" class="form-inputs" name="PDV no Computador"><br>
+
+                    <label class="form-label" data-inputname="PDV no Celular">PDV No Celular:</label>
+                    <input type="text" class="form-inputs" name="PDV no Celular"><br>
+
+                    <label class="form-label" data-inputname="PDV no SmartPOS">PDV Na SmartPOS:</label>
+                    <input type="text" class="form-inputs" name="PDV no SmartPOS"><br>
+
+                    <label class="form-label" data-inputname="PDV no Tablet">PDV No Tablet:</label>
+                    <input type="text" class="form-inputs" name="PDV no Tablet"><br>
+
+                    <label class="form-label" data-inputname="Tem Impressora Térmica">Impressora Térmica:</label>
+                    <input type="text" class="form-inputs" name="Tem Impressora Térmica"><br>
+
+                    <label class="form-label" data-inputname="Tem Balança">Tem Balança:</label>
+                    <input type="text" class="form-inputs" name="Tem Balança"><br>
+
+                    <label class="form-label" data-inputname="Tem SAT">Tem SAT:</label>
+                    <input type="text" class="form-inputs" name="Tem SAT"><br>
+
+                    <label class="form-label form-label-color"
+                        data-inputname="Previsão de Implementação">Implementação:</label>
+                    <input type="text" class="form-inputs" name="Previsão de Implementação"><br>
+
+                </fieldset>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="form-elements"> <!-- OBSERVAÇÕES -->
+            <div class="form-elements-flex">
+                <fieldset class="fieldset-block">
+                    <legend id="obs" class="titulos">OBSERVAÇÕES</legend>
+                    <textarea name="" rows="6" cols="100"></textarea><br>
+                </fieldset>
+
+
+            </div>
+
+            <button type="button" id="clear-button">Limpar</button>
+            <button type="button" id="transcribe-button">Transcrever</button>
+            <button type="button" id="preencher-formulario">Preencher Formulário</button>
+        </div>
+
+
+    </form>
+    <div> <!-- Transcrição -->
+        <fieldset class="fieldset-block">
+            <legend class="titulos">
+                <pre id="transcription"></pre>
+            </legend>
+        </fieldset>
+        <button type="button" id="copy-button"></button>
+        <button id="download-button">Baixar Transcrição</button>
+    </div>
+
+
+    <div class="form-elements-footer"> <!-- Tabela para os DDDs -->
+
+        <div class="form-div"> <!-- Tabela DDD-->
+            <table class="form-table"> <!-- Tabela DDD-->
+                <thead>
+                    <tr>
+                        <th class="form-th">DDD</th>
+                        <th class="form-th">ESTADO</th>
+                        <th class="form-th">SIGLA</th>
+                        <th class="form-th">FUSO HORÁRIO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas de dados -->
+                    <tr>
+                        <td class="form-td">11</td>
+                        <td class="form-td">São Paulo</td>
+                        <td class="form-td">SP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">12</td>
+                        <td class="form-td">São Paulo</td>
+                        <td class="form-td">SP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">13</td>
+                        <td class="form-td">São Paulo</td>
+                        <td class="form-td">SP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">14</td>
+                        <td class="form-td">São Paulo</td>
+                        <td class="form-td">SP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">15</td>
+                        <td class="form-td">São Paulo</td>
+                        <td class="form-td">SP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">16</td>
+                        <td class="form-td">São Paulo</td>
+                        <td class="form-td">SP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">17</td>
+                        <td class="form-td">São Paulo</td>
+                        <td class="form-td">SP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">18</td>
+                        <td class="form-td">São Paulo</td>
+                        <td class="form-td">SP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">19</td>
+                        <td class="form-td">São Paulo</td>
+                        <td class="form-td">SP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">21</td>
+                        <td class="form-td">Rio de Janeiro</td>
+                        <td class="form-td">RJ</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">22</td>
+                        <td class="form-td">Rio de Janeiro</td>
+                        <td class="form-td">RJ</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">24</td>
+                        <td class="form-td">Rio de Janeiro</td>
+                        <td class="form-td">RJ</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">27</td>
+                        <td class="form-td">Espírito Santo</td>
+                        <td class="form-td">ES</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">28</td>
+                        <td class="form-td">Espírito Santo</td>
+                        <td class="form-td">ES</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">31</td>
+                        <td class="form-td">Minas Gerais</td>
+                        <td class="form-td">MG</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">32</td>
+                        <td class="form-td">Minas Gerais</td>
+                        <td class="form-td">MG</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">33</td>
+                        <td class="form-td">Minas Gerais</td>
+                        <td class="form-td">MG</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">34</td>
+                        <td class="form-td">Minas Gerais</td>
+                        <td class="form-td">MG</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">35</td>
+                        <td class="form-td">Minas Gerais</td>
+                        <td class="form-td">MG</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">37</td>
+                        <td class="form-td">Minas Gerais</td>
+                        <td class="form-td">MG</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">38</td>
+                        <td class="form-td">Minas Gerais</td>
+                        <td class="form-td">MG</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">41</td>
+                        <td class="form-td">Paraná</td>
+                        <td class="form-td">PR</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">42</td>
+                        <td class="form-td">Paraná</td>
+                        <td class="form-td">PR</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">43</td>
+                        <td class="form-td">Paraná</td>
+                        <td class="form-td">PR</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">44</td>
+                        <td class="form-td">Paraná</td>
+                        <td class="form-td">PR</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">45</td>
+                        <td class="form-td">Paraná</td>
+                        <td class="form-td">PR</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">46</td>
+                        <td class="form-td">Paraná</td>
+                        <td class="form-td">PR</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">47</td>
+                        <td class="form-td">Santa Catarina</td>
+                        <td class="form-td">SC</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">48</td>
+                        <td class="form-td">Santa Catarina</td>
+                        <td class="form-td">SC</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">49</td>
+                        <td class="form-td">Santa Catarina</td>
+                        <td class="form-td">SC</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">51</td>
+                        <td class="form-td">Rio Grande do Sul</td>
+                        <td class="form-td">RS</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">53</td>
+                        <td class="form-td">Rio Grande do Sul</td>
+                        <td class="form-td">RS</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">54</td>
+                        <td class="form-td">Rio Grande do Sul</td>
+                        <td class="form-td">RS</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">55</td>
+                        <td class="form-td">Rio Grande do Sul</td>
+                        <td class="form-td">RS</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">61</td>
+                        <td class="form-td">Distrito Federal</td>
+                        <td class="form-td">DF</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">62</td>
+                        <td class="form-td">Goiás</td>
+                        <td class="form-td">GO</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">63</td>
+                        <td class="form-td">Tocantins</td>
+                        <td class="form-td">TO</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">64</td>
+                        <td class="form-td">Goiás</td>
+                        <td class="form-td">GO</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">65</td>
+                        <td class="form-td">Mato Grosso</td>
+                        <td class="form-td">MT</td>
+                        <td class="form-td">-1:00</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">66</td>
+                        <td class="form-td">Mato Grosso</td>
+                        <td class="form-td">MT</td>
+                        <td class="form-td">-1:00</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">67</td>
+                        <td class="form-td">Mato Grosso do Sul</td>
+                        <td class="form-td">MS</td>
+                        <td class="form-td">-1:00</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">68</td>
+                        <td class="form-td">Acre</td>
+                        <td class="form-td">AC</td>
+                        <td class="form-td">-2:00</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">69</td>
+                        <td class="form-td">Rondônia</td>
+                        <td class="form-td">RO</td>
+                        <td class="form-td">-1:00</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">71</td>
+                        <td class="form-td">Bahia</td>
+                        <td class="form-td">BA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">73</td>
+                        <td class="form-td">Bahia</td>
+                        <td class="form-td">BA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">74</td>
+                        <td class="form-td">Bahia</td>
+                        <td class="form-td">BA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">75</td>
+                        <td class="form-td">Bahia</td>
+                        <td class="form-td">BA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">77</td>
+                        <td class="form-td">Bahia</td>
+                        <td class="form-td">BA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">79</td>
+                        <td class="form-td">Sergipe</td>
+                        <td class="form-td">SE</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">81</td>
+                        <td class="form-td">Pernambuco</td>
+                        <td class="form-td">PE</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">82</td>
+                        <td class="form-td">Alagoas</td>
+                        <td class="form-td">AL</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">83</td>
+                        <td class="form-td">Paraíba</td>
+                        <td class="form-td">PB</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">84</td>
+                        <td class="form-td">Rio Grande do Norte</td>
+                        <td class="form-td">RN</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">85</td>
+                        <td class="form-td">Ceará</td>
+                        <td class="form-td">CE</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">86</td>
+                        <td class="form-td">Piauí</td>
+                        <td class="form-td">PI</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">87</td>
+                        <td class="form-td">Pernambuco</td>
+                        <td class="form-td">PE</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">88</td>
+                        <td class="form-td">Ceará</td>
+                        <td class="form-td">CE</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">89</td>
+                        <td class="form-td">Piauí</td>
+                        <td class="form-td">PI</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">91</td>
+                        <td class="form-td">Pará</td>
+                        <td class="form-td">PA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">92</td>
+                        <td class="form-td">Amazonas</td>
+                        <td class="form-td">AM</td>
+                        <td class="form-td">-1:00</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">93</td>
+                        <td class="form-td">Pará</td>
+                        <td class="form-td">PA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">94</td>
+                        <td class="form-td">Pará</td>
+                        <td class="form-td">PA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">95</td>
+                        <td class="form-td">Roraima</td>
+                        <td class="form-td">RR</td>
+                        <td class="form-td">-1:00</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">96</td>
+                        <td class="form-td">Amapá</td>
+                        <td class="form-td">AP</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">97</td>
+                        <td class="form-td">Amazonas</td>
+                        <td class="form-td">AM</td>
+                        <td class="form-td">-1:00</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">98</td>
+                        <td class="form-td">Maranhão</td>
+                        <td class="form-td">MA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <tr>
+                        <td class="form-td">99</td>
+                        <td class="form-td">Maranhão</td>
+                        <td class="form-td">MA</td>
+                        <td class="form-td">Normal</td>
+                    </tr>
+                    <!-- Repetir para outros dados -->
+                    <!-- ... -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-div"> <!--Tabela Tipos de Estabelecimentos-->
+            <table class="form-table">
+                <thead>
+                    <tr>
+                        <th class="form-th">VAREJO</th>
+                        <th class="form-th">FOOD</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td class="form-td">Açougue</td>
+                    <td class="form-td">Bar</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Adega</td>
+                    <td class="form-td">Cafeteria</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Armarinho</td>
+                    <td class="form-td">Cantina</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Arena Esportiva</td>
+                    <td class="form-td">Confeitaria</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Artigos Esportivos</td>
+                    <td class="form-td">Conveniência</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Aviário</td>
+                    <td class="form-td">Doceria</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Auto Peças</td>
+                    <td class="form-td">Espetaria</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Balada</td>
+                    <td class="form-td">Fast Food</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Distribuidora de Bebidas</td>
+                    <td class="form-td">Food Truck</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Floricultura</td>
+                    <td class="form-td">Hamburgueria</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Gráfica</td>
+                    <td class="form-td">Lanchonete</td>
+                </tr>
+                <tr>
+                    <td class="form-td">HortiFrut</td>
+                    <td class="form-td">Padaria</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Indústria</td>
+                    <td class="form-td">Pizzaria</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Informática</td>
+                    <td class="form-td">Restaurante</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Joalheria</td>
+                    <td class="form-td">Sorveteria</td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Acessórios</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Artigos Religiosos</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Bicicleta</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Brinquedos</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Cama e Banho</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Calçados</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Carro</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Cosméticos</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Descartáveis</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Embalagens</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Instrumentos Musicais</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Móveis</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Roupas</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Loja de Variedades</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Material de Construção</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Mercearia</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Mercado</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Mercado Autônomo</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Motel/Hotel</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Ótica</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Papelaria</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Pet Shop</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Produtos de Limpeza</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Produtos Hospitalares</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Quiosque</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Salão de Beleza</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Tabacaria</td>
+                    <td class="form-td"></td>
+                </tr>
+                <tr>
+                    <td class="form-td">Utensílios Domésticos</td>
+                    <td class="form-td"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-selects-cases-div"> <!-- Select Cases de Sucesso // Descrição Cases de Sucesso -->
+            <div class="form-select-cases"> <!-- Case de sucesso -->
+                <select id="formListaSuspensa1" onchange="mostrarDescricao('formListaSuspensa1')">
+
+                    <optgroup label="Cases de Sucesso" aria-placeholder="Cases de Sucesso">
+
+                        <option value="" disabled selected>Cases de Sucesso</option>
+                    <optgroup label="Loja de Roupas">
+                        <option value="Loja de Roupa">Loja de Roupas : Case de Sucesso Reptilia</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Casa de Carnes/Açougue">
+                        <option value="Casa de Carne-Açougue">Casa de Carnes/Açougue: Case de Sucesso Master Meats
+                        </option>
+                        <option value="Taurinos Organic">Casa de Carnes/Açougue:Taurino's Organic
+                        </option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Cervejaria / Bar">
+                        <option value="Alright-Brewing-Co">Sistema para Cervejaria: Case de Sucesso Alright Brewing Co
+                        </option>
+                        <option value="Bar-do-urso">Programa de Fidelidade Bar do Urso | Cervejaria Colorado + CPlug
+                        </option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Loja de Bebidas">
+                        <option value="Bubble-Mix-Tea">Bubble Mix Tea - Case de Sucesso ERP + PDV [ConnectPlug]
+                        </option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Pizzaria">
+                        <option value="JackPizza">Sistema para pizzaria: Case de Sucesso Jack Pizza</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Hamburgueria">
+                        <option value="Big-Bear-Burger">Sistema para Hamburgueria: Case de Sucesso Big Bear Burger
+                        </option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Sorveteria">
+                        <option value="Soft-Ice-Cream">Sistema para Sorveteria: Case de Sucesso Soft Ice Cream</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Quiosque">
+                        <option value="Jocker-Socks">Sistema para Quiosque: Case de Sucesso Jocker Socks</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Joalheria">
+                        <option value="Aço-Design">Aço Design - Case de Sucesso ERP + PDV [ConnectPlug]
+                        </option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Cama, Mesa e Banho">
+                        <option value="Cazza-Co">Cazza&Co. - Case de Sucesso</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Autoatendimento">
+                        <option value="iStok">Autoatendimento para Mercado Autônomo: Case de Sucesso iStok</option>
+                        <option value="Autoatendimento-bean-go">Autoatendimento Fast Food Bean Go - Case de Sucesso
+                        </option>
+                        <option value="Autoatendimento-tropical-banana">Autoatendimento Tropical Banana - Case de
+                            Sucesso</option>
+                        <option value="Autoatendimento-Coffee-Walk">Autoatendimento - Cafeteria | Coffee Walk
+                        </option>
+
+                    </optgroup>
+
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Cafeteria">
+                        <option value="Cafeteria-Waku-Waku">Sistema para Cafeteria - Waku Waku</option>
+                        <option value="Joyjoy-cafe">Sistema para Cafeteria - Cardápio Digital: Case Joyjoy Café</option>
+                        <option value="Gregario-Cafe">Sistema para Cafeteria - Gregário Café</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Confeitaria">
+                        <option value="Vitoria-Moss">Sistema para confeitaria - Case de Sucesso Vitória Moss
+                        </option>
+                        <option value="Loja-da-Torta">Sistema para confeitaria - Loja da Torta</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Restaurante">
+                        <option value="Sao-Bento-Armazem">Sistema para Restaurante - São Bento Armazém</option>
+                        <option value="Beer-Garden">Sistema para Bar e Restaurante - 100 Beer Garden</option>
+                        <option value="LuOVO">Sistema para Restaurante/Lanchonete - L'UOVO</option>
+                        <option value="Gogo-Sushi">Sistema para Restaurante - Gogo Sushi</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+                    <optgroup label="Loja de Embalagens">
+                        <option value="Trevo-Embalagens">Trevo Embalagens - Case de Sucesso
+                        </option>
+                    </optgroup>
+
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+
+
+
+
+                    <!-- Adicione outras opções conforme necessário -->
+                </select>
+
+                <select id="formListaSuspensa2" onchange="mostrarDescricao('formListaSuspensa2')">
+                    <optgroup label="Demonstrativos">
+                        <option value="" disabled selected>Demonstrativos</option>
+                        <option value="App-Gestao-Real-Time">Aplicativo de Gestão Real Time</option>
+                        <option value="Autoatendimento-Checkout">Autoatendimento Totem Checkout</option>
+                        <option value="Autoatendimento-Tablet">Autoatendimento Tablet</option>
+                        <option value="Sistema-Autoatendimento">Sistema de Autoatendimento</option>
+                        <option value="Power-BI">Sistema de Business Intelligence</option>
+                        <option value="Cardapio-digital-tablet">Cardápio Digital no Tablet</option>
+                        <option value="Smart-Menu">Cardápio Digital QRCode com Smart Menu</option>
+                        <option value="PDV-PC">Sistema Frente de Caixa PDV</option>
+                        <option value="Sistema-ERP">Sistema ERP ConnectPlug</option>
+                        <option value="Gestao-Delivery">Gestão de Delivery</option>
+                        <option value="Integracao-Torneiras">Integração com Torneiras de Chope</option>
+                        <option value="KDS-Monitor-Pedidos">KDS - Monitor de Pedidos</option>
+                        <option value="Mesas-e-Comandas">Sistema de Mesas e Comandas</option>
+                        <option value="PDV-Movel">Sistema de PDV Móvel</option>
+                        <option value="Programa-de-Fidelidade-Demo">Sistema de Programa de Fidelidade</option>
+                        <option value="Sistema-para-Restaurantes">Sistema para Restaurantes</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div id="formularioDescricao"> <!-- Descrição Cases de Sucesso -->
+                <p id="formularioDescricaoP">Descrição aparecerá aqui.</p>
+            </div>
+        </div>
+        <button type="button" id="copy-button-select">Copiar</button>
+    </div>
+
+
+
+    <div class="form-horarios-sup"> <!-- Horários Suporte -->
+
+
+        <p id="form-horarios-sup-p1">
+            Horário Regular:
+            09:00 às 17:00 hrs (Segunda a Sexta-feira)
+        </p>
+
+        <p>
+            Suporte Estendido:
+            17:00 às 22:00 hrs (Segunda a Sexta-feira) <br>&<br>
+        </p>
+
+        <p>11:00 às 21:00 hrs (Sábado e Domingo)</p>
+        <p>suporte estendido R$219,90</p>
+    </div>
+
+</body>
+
+<script>
+
+
+    //---------------------------------------------------------
+    //Cases de Sucesso - Demonstrativos
+    function mostrarDescricao(selectId) { //Cases de Sucesso - Demonstrativos
+        var formListaSuspensa = document.getElementById(selectId);
+        var descricaoDiv = document.getElementById("formularioDescricao");
+        var descricaoP = document.getElementById("formularioDescricaoP");
+
+        var opcaoSelecionada = formListaSuspensa.options[formListaSuspensa.selectedIndex].value;
+
+        var descricaoMap = {
+            // ... Mapeamento de descrições ...
+            //CASES DE SUCESSO
+            "mercadoAutonomo": "Para ser mais assertivo eu preciso entender a sua operação, para que o material separado pelo meu especialista faça sentido e a proposta esteja dentro do esperado, podemos fazer desta forma?",
+            "restaurante": "Pensando em valores e nas necessidades da sua operação gostaria de entender se a prioridade seria reduzir o custo ou melhorar a gestão que você tem do seu negócio para alavancar para os próximos meses?",
+            "bar": "DEAL BREAKER",
+
+            "Autoatendimento-bean-go": "*Autoatendimento para Fast Food: Case de Sucesso Bean Go*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=9WsJ5EMW74I",
+
+            "Autoatendimento-tropical-banana": "*Autoatendimento Tropical Banana - Case de Sucesso*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=VJFX5tqs72c",
+
+            "Autoatendimento-Coffee-Walk": "*Sistema de Autoatendimento - Cafeteria | Coffee Walk*" +
+                "<br><br>" +
+                "https://youtu.be/JwCCIk67QYI?feature=shared",
+
+            "Loja de Roupa": "*Loja de Roupas : Case de Sucesso Reptilia*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=TmVRtxht990",
+
+            "Casa de Carne-Açougue": "*Casa de Carnes/Açougue: Case de Sucesso Master Meats*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=xfJAMuE8x6s&t=106s",
+
+            "Taurinos Organic": "*Taurino's Organic - Case de Sucesso*" +
+            "<br><br>" +
+            "https://youtu.be/FvzxDiZmjTY?feature=shared",
+
+            "Bar-do-urso": "*Programa de Fidelidade Bar do Urso | Cervejaria Colorado + CPlug*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=e5S7QJv2dLU",
+
+            "Alright-Brewing-Co": "*Sistema para Cervejaria: Case de Sucesso Alright Brewing Co*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=pwqPTgcn_5c",
+
+            "Joyjoy-cafe": "*Sistema para Cafeteria - Cardápio Digital: Case Joyjoy Café*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=B01CqqY5_z0",
+
+            "JackPizza": "*Sistema para pizzaria: Case de Sucesso Jack Pizza*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=Bn8MkCg3eto",
+
+            "Cafeteria-Waku-Waku": "*Sistema para Cafeteria: Case de Sucesso Waku Waku*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=2p_k7oKB4xs",
+
+            "Gregario-Cafe": "*Gregário Café - Case de Sucesso*" +
+                "<br><br>" +
+                "https://youtu.be/M5JefuOulww?feature=shared",
+
+            "Soft-Ice-Cream": "*Sistema para Sorveteria: Case de Sucesso Soft Ice Cream*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=UuzWsFuuAS4",
+
+            "Sao-Bento-Armazem": "*Sistema para Restaurante - São Bento Armazém*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=gaoWdHGSZOE",
+
+            "Beer-Garden": "*Sistema para Bar e Restaurante - 100 Beer Garden*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=uqY3NV2bvFM",
+
+            "Jocker-Socks": "*Sistema para Quiosque: Case de Sucesso Jocker Socks*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=i92IaM-pHps",
+
+            "iStok": "*Autoatendimento para Mercado Autônomo: Case de Sucesso iStok*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=WpiQbLOP9WI",
+
+            "LuOVO": "*Sistema para Restaurante/Lanchonete - L'UOVO*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=dHAVOuOG-uk",
+
+            "Gogo-Sushi": "*Sistema para Restaurante - Gogo Sushi*" +
+                "<br><br>" +
+                "https://youtu.be/fD-LiZxSXkU?feature=shared",
+
+            "Vitoria-Moss": "*Sistema para Confeitaria: Case de Sucesso Vitória Moss*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=D0D_8kyvjOU",
+
+            "Big-Bear-Burger": "*Sistema para Hamburgueria: Case de Sucesso Big Bear Burger*" +
+                "<br><br>" +
+                "https://youtu.be/VULw7poKOKI?feature=shared",
+
+            "Bubble-Mix-Tea": "*Bubble Mix Tea - Case de Sucesso ERP + PDV [ConnectPlug]*" +
+                "<br><br>" +
+                "https://youtu.be/nrW4b9bMUaE?feature=shared",
+
+            "Aço-Design": "*Aço Design - Case de Sucesso ERP + PDV [ConnectPlug]*" +
+                "<br><br>" +
+                "https://youtu.be/EeWAbaENkAs?feature=shared",
+
+            "Cazza-Co": "*Cazza&Co. - Case de Sucesso*" +
+                "<br><br>" +
+                "https://youtu.be/RoDy0fFxhAI?feature=shared",
+
+            "Loja-da-Torta": "*Sistema para confeitaria - Loja da Torta*" +
+                "<br><br>" +
+                "https://youtu.be/Nr3gXrLLBjI?feature=shared",
+
+            "Trevo-Embalagens": "*Trevo Embalagens - Case de Sucesso*" +
+                "<br><br>" +
+                "https://youtu.be/qH28dv-BTfc?feature=shared",
+
+
+            ///////////////////////////////////DEMONSTRATIVOS/////////////////////////////////
+            ///////////////////////////////////DEMONSTRATIVOS/////////////////////////////////
+            ///////////////////////////////////DEMONSTRATIVOS/////////////////////////////////
+            ///////////////////////////////////DEMONSTRATIVOS/////////////////////////////////
+            ///////////////////////////////////DEMONSTRATIVOS/////////////////////////////////
+
+            "Autoatendimento-Checkout": "*Video Demonstrativo do Autoatendimento Checkout*" +
+                "<br><br>" +
+                "https://www.youtube.com/shorts/OuYN7FgFjhI",
+
+            "Autoatendimento-Tablet": "*Video Demonstrativo do Autoatendimento Tablet*" +
+                "<br><br>" +
+                "https://www.youtube.com/shorts/lsOf6vG_Q-8",
+
+            "Cardapio-digital-tablet": "*Cardápio Digital no Tablet*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=lmV_6VuTXJg",
+
+            "Smart-Menu": "*Cardápio Digital QRCode com Smart Menu*" +
+                "<br><br>" +
+                "https://www.youtube.com/watch?v=ieR7bCPYpAw",
+
+            "PDV-PC": "*Sistema Frente de Caixa - PDV*" +
+                "<br><br>" +
+                "https://youtu.be/0y9kXjkv5gc?feature=shared",
+
+            "Sistema-ERP":"*Sistema ERP ConnectPlug*"+
+            "<br><br>"+
+            "https://youtu.be/_yCMWIEDqGI?feature=shared",
+
+            "PDV-Movel": "*Sistema de PDV Móvel*" +
+                "<br><br>" +
+                "https://youtu.be/Y1zVSVRO0vI?feature=shared",
+
+            "Gestao-Delivery": "*Gestão de Delivery*" +
+                "<br><br>" +
+                "https://youtu.be/_Su-bC7owlo?feature=shared",
+
+
+            "Mesas-e-Comandas": "*Sistema de Mesas e Comandas*" +
+                "<br><br>" +
+                "https://youtu.be/IKUTsTAd8kU?feature=shared",
+
+            "KDS-Monitor-Pedidos": "*KDS - Monitor de Pedidos*" +
+                "<br><br>" +
+                "https://youtu.be/FvTddQbQcoY?feature=shared",
+
+            "Power-BI": "*Sistema para Gestão de Loja - Business Intelligence*" +
+                "<br><br>" +
+                "https://youtu.be/kSd5xSsEwcU?feature=shared",
+
+            "Sistema-Autoatendimento": "*Sistema de Autoatendimento Cplug*" +
+                "<br><br>" +
+                "https://youtu.be/KZ6PxWuim6o?feature=shared",
+
+            "Sistema-para-Restaurantes": "*Sistema para Restaurantes*" +
+                "<br><br>" +
+                "https://youtu.be/A1LghL3CoS0?feature=shared",
+
+            "Integracao-Torneiras": "*Integração com torneira de Choppe*" +
+                "<br><br>" +
+                "https://youtu.be/OLlKgZwWPSA?feature=shared",
+
+            "Programa-de-Fidelidade-Demo": "*Sistema de Programa de Fidelidade*" +
+                "<br><br>" +
+                "https://youtu.be/148VEGiVwJg?feature=shared",
+
+            "App-Gestao-Real-Time": "*Aplicativo de Gestão Real Time*" +
+                "<br><br>" +
+                "https://youtu.be/9RxMOGPbF90?feature=shared",
+
+        };
+
+        descricaoP.innerHTML = descricaoMap[opcaoSelecionada] || "Descrição aparecerá aqui.";
+
+        var copyButton = document.getElementById("copy-button-select");
+        copyButton.addEventListener("click", function () {
+            var descricaoP = document.getElementById("formularioDescricaoP");
+            var texto = descricaoP.innerText || descricaoP.textContent;
+            navigator.clipboard.writeText(texto);
+        });
+
+        if (opcaoSelecionada === "valores") {
+            opcoesValores.style.display = "block";
+        } else {
+            opcoesValores.style.display = "none";
+        }
+    }
+    //Cases de Sucesso - Demonstrativos
+    //---------------------------------------------------------
+
+    function transcribeForm() {
+    let transcribedText = '';
+    let includeObservacoes = false;
+    let isFirstFieldset = true;
+
+    const fieldsets = document.querySelectorAll('fieldset');
+    fieldsets.forEach(fieldset => {
+        let hasFilledInput = false;
+        const legend = fieldset.querySelector('.titulos');
+
+        if (legend) {
+            const inputs = fieldset.querySelectorAll('input[type="text"], textarea');
+            inputs.forEach(input => {
+                if (input.value) {
+                    hasFilledInput = true;
+                }
+            });
+
+            // Adiciona uma linha em branco antes de transcrever, exceto para o primeiro fieldset
+            if (!isFirstFieldset) {
+                transcribedText += '\n';
+            } else {
+                isFirstFieldset = false;
+            }
+
+            if (hasFilledInput || includeObservacoes) {
+                transcribedText += '-----' + legend.textContent.trim() + '-----\n';
+
+                inputs.forEach(input => {
+                    if (input.value) {
+                        transcribedText += input.name + ': ' + input.value + '\n';
+                    }
+                });
+
+                // Define includeObservacoes como true quando encontrar a linha "-----OBSERVAÇÕES-----"
+                includeObservacoes = legend.textContent.trim() === 'OBSERVAÇÕES';
+
+                // Adiciona uma linha em branco após cada fieldset
+                transcribedText += '\n';
+            }
+        }
+    });
+
+}
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('client-form');
+        const transcription = document.getElementById('transcription');
+        const nomeInput = document.querySelector('input[name="Nome"]');
+        const downloadButton = document.getElementById('download-button');
+        const tituloPagina = document.title;
+
+
+        var labels = document.querySelectorAll('.form-label');
+        const seleton = document.querySelectorAll('select-options')
+
+        labels.forEach(function (label) {
+            label.addEventListener('click', function () {
+                // Obter o nome do input associado ao rótulo
+                var inputName = label.dataset.inputname;
+
+                // Verificar o nome do input e copiar a mensagem correspondente
+                var mensagem = '';
+
+                switch (inputName) {
+                    case 'Segmento':
+                        mensagem = 'Qual seria o segmento do seu negócio?';
+                        break;
+
+                    case 'Estado':
+                        mensagem = 'Certo, em qual Estado fica seu negócio?';
+                        break;
+
+                    case 'Tem Sistema':
+                        mensagem = 'Certo, e hoje você já utiliza algum sistema de gestão e vendas? ou faz o controle todo manual?';
+                        break;
+
+                    case 'Em Relação a NF':
+                        mensagem = "Certo, Qual a sua preferência para lidar com Notas Fiscais dos produtos vendidos pelo PDV? Nosso PDV oferece 3 opções, sendo:\n\n" +
+                            "1 - emitir NF ou Cupom Fiscal em todas as vendas.\n\n" +
+                            "2 - Hibrida, ou seja, emitir apenas quando quiser.\n\n" +
+                            "3 - Não emitir NF ou Cupom Fiscal, apenas recibo de venda, que não tem validade fiscal.";
+                        break;
+
+                    case 'Expectativa de Investimento':
+                        mensagem = 'Certo, estamos focados em oferecer o melhor custo-benefício para o seu negócio. Para ajustarmos nossos serviços às suas expectativas, qual seria a sua ideia de investimento mensal em nosso sistema?';
+                        break;
+
+                    case 'Tem Funcionarios':
+                        mensagem = 'Certo, hoje você tem funcionários lhe ajudando em sua operação?';
+                        break;
+
+                    case 'Tem Socios':
+                        mensagem = 'Certo, e em relação a sócios, você tem alguém que lhe ajuda nas decisões ou você quem gerencia tudo?';
+                        break;
+
+                    case 'Total de PDVs':
+                        mensagem = 'Certo, e em relação a quantidade de PDVs que irá precisar, apenas 1 seria suficiente ou teria que ter mais de um ponto de venda para atender a demanda de clientes?';
+                        break;
+
+                    case 'Trabalha com Serviço':
+                        mensagem = 'Certo, no caso você faz apenas a venda de produtos ou também fornece serviços?';
+                        break;
+
+                    case 'PDV no Celular':
+                        mensagem = 'Certo, você acha interessante seus atendentes utilizarem um PDV Móvel, para realizar vendas a necessidade de ir para a frente de caixa? \n\n' +
+                            'Existe a possibilidade de você utilizar em Celulares Android ou Tablets, qual seria mais interessante?';
+                        break;
+
+                    case 'PDV no Tablet':
+                        mensagem = 'Certo, você acha interessante seus atendentes utilizarem um PDV Móvel, para realizar vendas a necessidade de ir para a frente de caixa? \n\n' +
+                            'Existe a possibilidade de você utilizar em Celulares Android ou Tablets, qual seria mais interessante?';
+                        break;
+
+                    case 'Previsão de Implementação':
+                        mensagem = 'Certo, você ja tem uma expectativa para quando você quer ter o sistema já funcionando em sua operação? ou a principio não seria uma urgência?';
+                        break;
+
+
+                    // Adicione mais cases conforme necessário para outros inputs
+
+                    default:
+                        mensagem = '';
+                }
+
+                // Copiar o texto para a área de transferência
+                navigator.clipboard.writeText(mensagem);
+            });
+        });
+
+        function transcribeForm() { //CHECKBOXES
+            let transcribedText = '';
+            let includeObservacoes = false;
+
+            const fieldsets = form.querySelectorAll('fieldset');
+            fieldsets.forEach(fieldset => {
+                let hasFilledInput = false;
+                const legend = fieldset.querySelector('.titulos');
+
+                if (legend) {
+                    const inputs = fieldset.querySelectorAll('input[type="text"], textarea');
+                    inputs.forEach(input => {
+                        if (input.value) {
+                            hasFilledInput = true;
+                        }
+                    });
+
+                    if (hasFilledInput || includeObservacoes) {
+                        transcribedText += '\n' + '-----' + legend.textContent.trim() + '-----\n';
+
+                        inputs.forEach(input => {
+                            if (input.value) {
+                                transcribedText += input.name + ': ' + input.value + '\n';
+                            }
+                        });
+
+                        // Inclui o texto do checkbox na transcrição se estiver marcado
+                        if (legend.textContent.trim() === 'OBSERVAÇÕES') {
+                            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                            checkboxes.forEach(checkbox => {
+                                if (checkbox.checked) {
+                                    switch (checkbox.name) {
+                                        case 'Plano básico:':
+                                            transcribedText += 'Passei valor do plano básico sendo a partir de R$ 152,90 no plano com fidelidade sendo um custo mensal, avisando que pode variar dependendo da necessidade do negócio.\n';
+                                            break;
+
+                                        case 'AutoatendimentoCheck:':
+                                            transcribedText += 'Passei valor do Ponto de Autoatendimento avisando que será um custo de R$ 419,90 por ponto de autoatendimento, sendo apenas disponível no plano com fidelidade sendo parte do seu custo mensal com nosso sistema.\n';
+                                            break;
+
+                                        case 'Mini-cpu:':
+                                            transcribedText += 'Passei valor da Mini-CPU de R$ 900,00 à vista ou R$ 990,00 parcelado em 6x no crédito, avisando que será necessário caso prefira utilizar Autoatendimento no Monitor Touch.\n';
+                                            break;
+
+                                        case 'servicosNF:':
+                                            transcribedText += 'Avisei que nosso sistema não faz NF de serviços, achou tranquilo.\n'
+                                            break;
+
+                                        case 'nfSC:':
+                                            transcribedText += 'Avisei sobre NF em SC, achou tranquilo.\n'
+                                            break;
+
+                                        // Adicione mais casos para outros checkboxes conforme necessário
+                                    }
+                                }
+                            });
+                        }
+
+
+                        // Adiciona a transcrição do select apenas se a opção selecionada for diferente de "Selecione"
+                        var select = fieldset.querySelector('select');
+                        if (select) {
+                            var selectedOption = select.options[select.selectedIndex];
+                            if (selectedOption.value !== '' && !selectedOption.disabled) {
+                                transcribedText += selectedOption.value + ': ' + selectedOption.text + '\n';
+                            }
+                        }
+
+                        // Define includeObservacoes como true quando encontrar a linha "-----OBSERVAÇÕES-----"
+                        includeObservacoes = legend.textContent.trim() === 'OBSERVAÇÕES';
+                    }
+                }
+            });
+
+            const transcription = document.getElementById('transcription');
+            transcription.textContent = transcribedText;
+        }
+
+
+
+        const transcribeButton = document.getElementById('transcribe-button'); ///BOTAO DE TRANSCREVER
+        transcribeButton.addEventListener('click', transcribeForm);
+
+        const clearButton = document.getElementById('clear-button');
+
+        clearButton.addEventListener('click', () => {
+
+                const inputs = form.querySelectorAll('input[type="text"], textarea'); // LIMPA OS INPUTS COM TYPE TEXT, E O TEXTAREA
+                inputs.forEach(input => {
+                    input.value = '';
+                    document.title = 'Busque a Excelência';
+                    transcription.textContent = '';
+                });
+
+
+                const checkboxes = form.querySelectorAll('input[type="checkbox"]');        // Desmarca todos os checkboxes
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+
+
+                const optionsDelSelect = form.querySelector('option[type="select"]')
+                optionsDelSelect.forEach(select =>{
+                    
+                })
+                document.getElementsByName('options-seletor').selectedIndex = 0;
+
+                transcription.textContent = '';
+            });
+
+            nomeInput.addEventListener('input', function () {
+                // Altera o título da página conforme o valor inserido no campo "Nome"
+                document.title = nomeInput.value || 'Busque a Excelência';
+        });
+
+
+
+        const copyButton = document.createElement('button'); ///BOTÃO DE COPIAR
+        copyButton.textContent = 'Copiar';
+        copyButton.addEventListener('click', () => {
+            const transcriptionText = transcription.textContent.trim();
+            if (transcriptionText) {
+                navigator.clipboard.writeText(transcriptionText)
+                    .then(() => alert('Texto copiado com sucesso!'))
+                    .catch(err => console.error('Erro ao copiar texto:', err));
+            } else {
+                alert('Nada para copiar. Transcreva primeiro!');
+            }
+        });
+
+        const legendContainer = document.getElementById('copy-button');
+        legendContainer.appendChild(copyButton);
+
+        downloadButton.addEventListener('click', () => {
+            const transcriptionText = transcription.textContent.trim();
+            const nomeCliente = nomeInput.value.trim(); // Obtém o nome do cliente
+
+            if (transcriptionText && nomeCliente) {
+                const currentDate = new Date();
+                const formattedDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
+
+                const blob = new Blob([transcriptionText], { type: 'text/plain' });
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${nomeCliente}-${formattedDate}.txt`; // Adiciona o nome do cliente ao nome do arquivo
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
+            } else {
+                alert('Nada para baixar. Transcreva primeiro!');
+            }
+        });
+
+        nomeInput.addEventListener('input', function () {
+            tituloPagina.textContent = nomeInput.value || 'Busque a Excelência';
+        });
+
+        const preencherFormularioButton = document.getElementById('preencher-formulario');
+
+        preencherFormularioButton.addEventListener('click', function () {
+            const transcribedText = transcription.textContent.trim();
+
+            if (transcribedText) {
+                const fieldsets = form.querySelectorAll('fieldset');
+                let observacoesText = ''; // Adiciona uma variável para armazenar as observações
+
+                fieldsets.forEach(fieldset => {
+                    const legend = fieldset.querySelector('.titulos');
+
+                    if (legend) {
+                        const legendText = legend.textContent.trim();
+
+                        if (legendText === 'OBSERVAÇÕES') {
+                            // Se a legenda for "OBSERVAÇÕES", adiciona o conteúdo ao observacoesText
+                            const textarea = fieldset.querySelector('textarea');
+                            if (textarea) {
+                                observacoesText = '-----' + legendText + '-----\n';
+                                observacoesText += textarea.value + '\n\n'; // Adiciona uma linha em branco após as observações
+                            }
+                        } else {
+                            const inputs = fieldset.querySelectorAll('input[type="text"]');
+                            const check = fieldset.querySelectorAll('input[type="checkbox"]');
+                            inputs.forEach(input => {
+                                const regex = new RegExp(input.name + ': (.+)', 'g');
+                                const match = regex.exec(transcribedText);
+
+                                if (match && match[1]) {
+                                    // Preenche os campos correspondentes apenas para as seções desejadas
+                                    if (legendText === 'DADOS DO CLIENTE' ||
+                                        legendText === 'COMO FAZ O ATENDIMENTO?' ||
+                                        legendText === 'EXTRAS' ||
+                                        legendText === 'DEMONSTROU INTERESSE' ||
+                                        legendText === 'OBSERVAÇÕES') {
+                                        input.value = match[1];
+                                        transcribedText === '';
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+
+                transcription.textContent = observacoesText; // Preenche o textarea apenas com as observações
+            } else {
+                alert('Nada para preencher. Transcreva primeiro!');
+            }
+        });
+
+    });
+
+</script>
+
+</html>
