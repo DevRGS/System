@@ -17,7 +17,22 @@
         @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
     </style>
 
-    <script> //Salva dados escritos, mesmo após atualizar pagina
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'header.html', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById('header-placeholder').innerHTML = xhr.responseText;
+                } else if (xhr.readyState == 4) {
+                    console.error('Erro ao carregar o cabeçalho: ' + xhr.statusText);
+                }
+            };
+            xhr.send();
+        });
+    
+    
+    //Salva dados escritos, mesmo após atualizar pagina
         document.addEventListener('DOMContentLoaded', function () {
             // Recupera os dados do armazenamento local e preenche os campos
             function carregarDados() {
@@ -48,46 +63,62 @@
             // Carrega os dados quando a página é carregada
             carregarDados();
         });
+
+
     </script>
 </head>
-
 
 <header class="cabeça" id="form-header">
     <div class="menu-contain">
         <div class="menu-nav">
-            <nav class="links-menu">
-                <a href="autoatendimento.html" target="_self" class="itens-menu-nav"
-                    rel="noopener noreferrer">Autoatendimento</a>
-                <a href="Integrações.html" target="_self" class="itens-menu-nav"
-                    rel="noopener noreferrer">Integrações</a>
-                <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita
-                    NFE</a>
-                <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
-                <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
-                    KDS</a>
-                <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav"
-                    rel="noopener noreferrer">Business Intelligence</a>
-                <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav"
-                    rel="noopener noreferrer">Programa Fidelidade</a>
-                <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
-                <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz
-                    Objeção</a>
-                <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head"
-                    rel="noopener noreferrer">Formulário</a>
-            </nav>
+        <nav class="links-menu">
+            <a href="autoatendimento.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Autoatendimento</a>
+            <a href="Integrações.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Integrações</a>
+            <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita NFE</a>
+            <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
+            <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
+                KDS</a>
+            <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Business Intelligence</a>
+            <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Programa Fidelidade</a>
+            <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
+            <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz Objeção</a>
+            <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head" rel="noopener noreferrer">Formulário</a>
+        </nav>
+        <nav class="links-menu">
+            <a href="Equipamentos.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Equipamentos</a>
+        </nav>
         </div>
+    </div>
 </header>
 
-
 <body id="form-body">
-
-
 
     <form id="client-form">
 
         <div class="client form-01">
             <div class="form-elements">
-                <fieldset class="fieldset-block"> <!-- DADOS DO CLIENTE -->
+                <div class="form-centraliza-horizontal"> <!-- Horários Suporte -->
+
+                    <div class="form-horarios-sup"> <!-- Horários Suporte -->
+                        <p>
+                            Suporte Horário Regular:
+                            09:00 às 17:00 
+                            <br>
+                            (Segunda a Sexta-feira)
+                        </p>
+                    </div>
+                    
+                    <div class="form-horarios-sup"> <!-- Horários Suporte -->
+                        <p>
+                        <p>
+                            Suporte Estendido (>= R$ 219,90):
+                            17:00 às 22:00 (Segunda a Sexta-feira) <br>&<br>
+                            11:00 às 21:00 (Sábado e Domingo)
+                        </p>
+                    </div>
+                </div>
+
+                   <fieldset class="fieldset-block"> <!-- DADOS DO CLIENTE -->
                     <legend class="titulos">DADOS DO CLIENTE</legend>
                     <label class="form-label" data-inputname="Nome">Nome:</label>
                     <input type="text" class="form-inputs" name="Nome"><br>
@@ -98,8 +129,8 @@
                     <label class="form-label form-label-color" data-inputname="Segmento">Segmento:</label>
                     <input type="text" class="form-inputs" name="Segmento"><br>
 
-                    <label class="form-label form-label-color" data-inputname="Estado">Estado:</label>
-                    <input type="text" class="form-inputs" name="Estado"><br>
+                    <label class="form-label form-label-color" data-inputname="Localização">Localização:</label>
+                    <input type="text" class="form-inputs" name="Localização"><br>
 
                     <label class="form-label form-label-color" data-inputname="Tem sistema">Tem Sistema:</label>
                     <input type="text" class="form-inputs" name="Tem sistema"><br>
@@ -133,6 +164,7 @@
 
                 </fieldset>
             </div>
+
 
             <div class="form-elements">
                 <fieldset class="fieldset-block"> <!-- COMO FAZ ATENDIMENTO? -->
@@ -169,6 +201,9 @@
                     <label class="form-label" data-inputname="Cardapio Digital">Cardápio Digital:</label>
                     <input type="text" class="form-inputs" name="Cardapio Digital"><br>
 
+                    <label class="form-label" data-inputname="Cardapio Digital">Coletor de Dados:</label>
+                    <input type="text" class="form-inputs" name="Cardapio Digital"><br>
+
                     <label class="form-label" data-inputname="Estoque em Grade">Estoque em Grade:</label>
                     <input type="text" class="form-inputs" name="Estoque em Grade"><br>
 
@@ -187,11 +222,8 @@
                     <label class="form-label" data-inputname="Integração TAP">Integração TAP:</label>
                     <input type="text" class="form-inputs" name="Integração TAP"><br>
 
-                    <label class="form-label" data-inputname="Maquina POS">Maquina POS:</label>
-                    <input type="text" class="form-inputs" name="Maquina POS"><br>
-
-                    <label class="form-label" data-inputname="Maquina Smart">Maquina Smart:</label>
-                    <input type="text" class="form-inputs" name="Maquina Smart"><br>
+                    <label class="form-label" data-inputname="SmartPOS">SmartPOS:</label>
+                    <input type="text" class="form-inputs" name="SmartPOS"><br>
 
                     <label class="form-label" data-inputname="Mesas e Comandas">Mesas e Comandas:</label>
                     <input type="text" class="form-inputs" name="Mesas e Comandas"><br>
@@ -234,10 +266,26 @@
 
 
                 </fieldset>
-
+                
             </div>
+            
+            
 
+            
             <div class="form-elements"> <!-- CHECKBOXES -->
+                
+                    <div class="form-centraliza-horizontal"> <!-- Horários Implementação --> 
+                        <div class="form-horarios-sup"> <!-- Horários Implementação -->
+                            <p id="form-horarios-sup-p1">
+                                Implementação:
+                                09:00 às 12:15 | 13:45 às 17:00 
+                                <br>
+                                (segunda a sexta)
+                                <br>
+                                Tempo de implementação: Média de 15 dias úteis.
+                            </p>
+                        </div>
+                    </div>
                 <fieldset class="fieldset-block">
                     <legend class="titulos">MSG. PRONTAS.</legend>
                     <label class="form-label-check">
@@ -297,8 +345,8 @@
 
 
 
-
         <div class="form-elements"> <!-- OBSERVAÇÕES -->
+            
             <div class="form-elements-flex">
                 <fieldset class="fieldset-block">
                     <legend id="obs" class="titulos">OBSERVAÇÕES</legend>
@@ -312,7 +360,7 @@
             <button type="button" id="transcribe-button">Transcrever</button>
             <button type="button" id="preencher-formulario">Preencher Formulário</button>
         </div>
-
+ 
 
     </form>
     <div> <!-- Transcrição -->
@@ -933,7 +981,7 @@
 
         <div class="form-selects-cases-div"> <!-- Select Cases de Sucesso // Descrição Cases de Sucesso -->
             <div class="form-select-cases"> <!-- Case de sucesso -->
-                <select id="formListaSuspensa1" onchange="mostrarDescricao('formListaSuspensa1')">
+                <select id="formListaSuspensa1" class="formListaSuspensa-class" onchange="mostrarDescricao('formListaSuspensa1')">
 
                     <optgroup label="Cases de Sucesso" aria-placeholder="Cases de Sucesso">
 
@@ -1047,7 +1095,7 @@
                     <!-- Adicione outras opções conforme necessário -->
                 </select>
 
-                <select id="formListaSuspensa2" onchange="mostrarDescricao('formListaSuspensa2')">
+                <select id="formListaSuspensa2" class="formListaSuspensa-class" onchange="mostrarDescricao('formListaSuspensa2')">
                     <optgroup label="Demonstrativos">
                         <option value="" disabled selected>Demonstrativos</option>
                         <option value="App-Gestao-Real-Time">Aplicativo de Gestão Real Time</option>
@@ -1068,33 +1116,74 @@
                         <option value="Sistema-para-Restaurantes">Sistema para Restaurantes</option>
                     </optgroup>
                 </select>
-            </div>
 
+                <select id="formListaSuspensa3" class="formListaSuspensa-class" onchange="mostrarDescricao('formListaSuspensa3')">
+
+                    <optgroup label="Cases de Sucesso" aria-placeholder="Cases de Sucesso">
+
+                        <option value="" disabled selected>Videos sobre Sistema</option>
+                    <optgroup label="Treinamento Inicial">
+                        <option value="Treinamento-Inicial">Treinamento Inicial do Sistema</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+
+                    <optgroup label="Emissão Fiscal">
+                        <option value="Emissao-Fiscal-Manual">Como Emitir uma Nota Fiscal Manual?
+                        </option>
+                        <option value="Emissao-Fiscal-Info">Quais as Informações Necessárias para Emissão de Notas Fiscais?</option>
+                        <option value="Emissao-Fiscal-Adm">Administrando Notas Fiscais (NF-e e NFC-e)</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+
+                    <optgroup label="Vendas">
+                        <option value="Nova-Proposta-Venda">Nova Proposta de Venda</option>
+                        <option value="Vinculando-Propostas-Pedidos-Vendas">Vinculando Propostas e Pedidos à Vendas</option>
+                        <option value="Novo-Pedido-Venda">Novo Pedido de Venda</option>
+                        <option value="Nova-Venda-ERP">Nova Venda no ERP</option>
+                        <option value="Criando-Nova-Ordem-Serviço">Criando Nova Ordem de Serviço</option>
+                        <option value="Contratos-Venda">Contratos de Venda</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+
+                    <optgroup label="Clientes">
+                        <option value="Cadastrando-Clientes-ERP">Cadastrando Novos Clientes através do ERP</option>
+                        <option value="Importação-Clientes-Planilha">Realizando Importação de Clientes através de uma Planilha (XLSX)</option>
+                        <option value="Restaurando-Clientes-Excluídos">Restaurando Clientes Excluídos</option>
+                    </optgroup>
+
+                    <optgroup label=""></optgroup>
+
+                    <optgroup label="Estoque">
+                        <option value="Cadastrando-Novos-Produtos">Cadastrando Novos Produtos</option>
+                        <option value="Vinculando-Atributos-Produtos">Vinculando Atributos à Produtos</option>
+                        <option value="Importação-Produtos-Planilha">Realizando Importação de Produtos através de uma Planilha (XLSX) </option>
+                        <option value="Informações-Tributarias-Produto">Administrando Informações Tributárias do Produto </option>
+                        <option value="Tipo-de-Produto-Simples">O que são Produtos do Tipo Simples?</option>
+                        <option value="Tipo-de-Produto-Combo">O que são Produtos do Tipo Combo?</option>
+                        <option value="Tipo-de-Produto-Processo-Produtivo">O que são Produtos do Tipo Processo Produtivo?</option>
+                        <option value="Tipo-de-Produto-Produção-Automatica">O que são Produtos do Tipo Produção Automática?</option>
+                        <option value="Varejo-Atacado-Produtos">Administrando Configurações de Varejo x Atacado nos Produtos</option>
+                        <option value="Atualização-Lote-Produtos">Realizando Atualização em Lote de Produtos</option>
+                        <option value="Criando-Nova-Lista-Preços">Criando uma Nova Lista de Preços</option>
+                        <option value="Restaurando-Produtos-Excluidos">Restaurando Produtos Excluídos</option>
+                    </optgroup>
+
+
+                    <!-- Adicione outras opções conforme necessário -->
+                </select>
+                
+            </div>
+            
             <div id="formularioDescricao"> <!-- Descrição Cases de Sucesso -->
                 <p id="formularioDescricaoP">Descrição aparecerá aqui.</p>
             </div>
         </div>
         <button type="button" id="copy-button-select">Copiar</button>
     </div>
-
-
-
-    <div class="form-horarios-sup"> <!-- Horários Suporte -->
-
-
-        <p id="form-horarios-sup-p1">
-            Horário Regular:
-            09:00 às 17:00 hrs (Segunda a Sexta-feira)
-        </p>
-
-        <p>
-            Suporte Estendido:
-            17:00 às 22:00 hrs (Segunda a Sexta-feira) <br>&<br>
-        </p>
-
-        <p>11:00 às 21:00 hrs (Sábado e Domingo)</p>
-        <p>suporte estendido R$219,90</p>
-    </div>
+    
 
 </body>
 

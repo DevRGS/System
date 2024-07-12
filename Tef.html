@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busque a Excelência</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="http://www.tibiadb.com/favicon.ico" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'header.html', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById('header-placeholder').innerHTML = xhr.responseText;
+                } else if (xhr.readyState == 4) {
+                    console.error('Erro ao carregar o cabeçalho: ' + xhr.statusText);
+                }
+            };
+            xhr.send();
+        });
+    
+    
+    //Salva dados escritos, mesmo após atualizar pagina
+        document.addEventListener('DOMContentLoaded', function () {
+            // Recupera os dados do armazenamento local e preenche os campos
+            function carregarDados() {
+                // Itera sobre todos os elementos de input e textarea
+                document.querySelectorAll('input, textarea').forEach(function (elemento) {
+                    // Verifica se há dados salvos no armazenamento local para este elemento
+                    if (localStorage.getItem(elemento.name)) {
+                        // Preenche o valor do elemento com os dados salvos
+                        elemento.value = localStorage.getItem(elemento.name);
+                    }
+                });
+            }
+
+            // Salva os dados dos campos no armazenamento local
+            function salvarDados() {
+                // Itera sobre todos os elementos de input e textarea
+                document.querySelectorAll('input, textarea').forEach(function (elemento) {
+                    // Salva o valor do elemento no armazenamento local
+                    localStorage.setItem(elemento.name, elemento.value);
+                });
+            }
+
+            // Adiciona um ouvinte para o evento de mudança em campos de input e textarea
+            document.querySelectorAll('input, textarea').forEach(function (elemento) {
+                elemento.addEventListener('change', salvarDados);
+            });
+
+            // Carrega os dados quando a página é carregada
+            carregarDados();
+        });
+
+
+    </script>
+</head>
+
+<header class="cabeça" id="form-header">
+    <div class="menu-contain">
+        <div class="menu-nav">
+        <nav class="links-menu">
+            <a href="autoatendimento.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Autoatendimento</a>
+            <a href="Integrações.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Integrações</a>
+            <a href="Facilita-NFE.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Facilita NFE</a>
+            <a href="Smart-menu.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Smart Menu</a>
+            <a href="Monitor-KDS.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Monitor
+                KDS</a>
+            <a href="Business-Inteligence.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Business Intelligence</a>
+            <a href="Programa-de-fidelidade.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Programa Fidelidade</a>
+            <a href="Real-Time.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Real-Time</a>
+            <a href="Matriz-objecao.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Matriz Objeção</a>
+            <a href="Formulario-lead.html" class="itens-menu-nav" id="formulario-head" rel="noopener noreferrer">Formulário</a>
+        </nav>
+        <nav class="links-menu">
+            <a href="Equipamentos.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Equipamentos</a>
+        </nav>
+        </div>
+    </div>
+</header>
+
+<h1 class="tef h1">TEF - SITEF - SMART TEF</h1>
+
+<h2 class="tef-h2">Transferencias Eletrônicas de Fundos (a ideia de fazer estas transferências de forma segura)</h2>
+
+Autoatendimento - Duvidas.
+- Funciona com a SITEF (é uma integradora parceira)
+- Pode trabalhar com multiadiquirentes no mesmo pinpad.
+- A SITEF tem um custo de R$ 99,90.
+
+a SmartTEF (é da própria cplug)
+Integradora parceiras
+Vindi, Cielo - lio on, PagSeguro - P2, Vero - L300, GPOS 700, SunMi P2.
+
+**TEF ou SmartTEF não funciona Sem internet.
+
+- TEF ou SmartTEF são multi-adiquirentes.
+
+Estando na mesma rede, a SmartTEF recebe a cobrança.
+
+
+***PDV android não funciona TEF
+***Autoatendimento na Elgin M10 funciona a TEF.
