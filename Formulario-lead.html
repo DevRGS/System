@@ -107,7 +107,7 @@
                             (Segunda a Sexta-feira)
                         </p>
                     </div>
-                    
+
                     <div class="form-horarios-sup"> <!-- Horários Suporte -->
                         <p>
                         <p>
@@ -1119,44 +1119,64 @@
 
                 <select id="formListaSuspensa3" class="formListaSuspensa-class" onchange="mostrarDescricao('formListaSuspensa3')">
 
-                    <optgroup label="Cases de Sucesso" aria-placeholder="Cases de Sucesso">
+                    <optgroup label="Videos sobre Sistema">
 
-                        <option value="" disabled selected>Videos sobre Sistema</option>
+                    <option value="" disabled selected>Videos sobre Sistema</option>
                     <optgroup label="Treinamento Inicial">
-                        <option value="Treinamento-Inicial">Treinamento Inicial do Sistema</option>
+                    <option value="Treinamento-Inicial">Treinamento Inicial do Sistema</option>
                     </optgroup>
 
                     <optgroup label=""></optgroup>
 
-                    <optgroup label="Emissão Fiscal">
-                        <option value="Emissao-Fiscal-Manual">Como Emitir uma Nota Fiscal Manual?
-                        </option>
-                        <option value="Emissao-Fiscal-Info">Quais as Informações Necessárias para Emissão de Notas Fiscais?</option>
-                        <option value="Emissao-Fiscal-Adm">Administrando Notas Fiscais (NF-e e NFC-e)</option>
+                    
+                    <optgroup label="----------> Configurações <----------">
+                        <optgroup label="----> Conf. Fiscais">
+                            <option value="Emissao-Fiscal-Info">Quais as Informações Necessárias para Emissão de Notas Fiscais?</option>
+                        </optgroup>
+                    </optgroup>
+                    
+                    <optgroup label=""></optgroup>
+
+                    <optgroup label="----------> Vendas <----------">
+                        <optgroup label="----> Geral">
+                            <option value="Nova-Proposta-Venda">Nova Proposta de Venda</option>
+                            <option value="Vinculando-Propostas-Pedidos-Vendas">Vinculando Propostas e Pedidos à Vendas</option>
+                            <option value="Novo-Pedido-Venda">Novo Pedido de Venda</option>
+                            <option value="Nova-Venda-ERP">Nova Venda no ERP</option>
+                            <option value="Emissao-Fiscal-Manual">Como Emitir uma Nota Fiscal Manual?</option>
+                            <option value="Emissao-Fiscal-Adm">Administrando Notas Fiscais (NF-e e NFC-e)</option>
+                            
+                        </optgroup>
+
+                        <optgroup label=""></optgroup>
+
+                        <optgroup label="----> Serviços">
+                            <option value="Criando-Nova-Ordem-Serviço">Criando Nova Ordem de Serviço</option>
+                            <option value="Contratos-Venda">Contratos de Venda</option>
+                        </optgroup>
+
+                        <optgroup label=""></optgroup>
+
+                        <optgroup label="----> Cadastros">
+                            <option value="Cadastrando-Clientes-ERP">Cadastrando Novos Clientes através do ERP</option>
+                            <option value="Importação-Clientes-Planilha">Realizando Importação de Clientes através de uma Planilha (XLSX)</option>
+                            <option value="Restaurando-Clientes-Excluídos">Restaurando Clientes Excluídos</option>
+                        </optgroup>
+
+                        <optgroup label=""></optgroup>
+
+                        <optgroup label="----> Reservas">
+                            <option value="Nova-Reserva-Agenda">Realizando Nova Reserva de Agenda</option>
+                        </optgroup>
                     </optgroup>
 
                     <optgroup label=""></optgroup>
 
-                    <optgroup label="Vendas">
-                        <option value="Nova-Proposta-Venda">Nova Proposta de Venda</option>
-                        <option value="Vinculando-Propostas-Pedidos-Vendas">Vinculando Propostas e Pedidos à Vendas</option>
-                        <option value="Novo-Pedido-Venda">Novo Pedido de Venda</option>
-                        <option value="Nova-Venda-ERP">Nova Venda no ERP</option>
-                        <option value="Criando-Nova-Ordem-Serviço">Criando Nova Ordem de Serviço</option>
-                        <option value="Contratos-Venda">Contratos de Venda</option>
-                    </optgroup>
+                    <optgroup label="----------> Estoque <----------">
 
-                    <optgroup label=""></optgroup>
+                        <optgroup label="----> Compras">
 
-                    <optgroup label="Clientes">
-                        <option value="Cadastrando-Clientes-ERP">Cadastrando Novos Clientes através do ERP</option>
-                        <option value="Importação-Clientes-Planilha">Realizando Importação de Clientes através de uma Planilha (XLSX)</option>
-                        <option value="Restaurando-Clientes-Excluídos">Restaurando Clientes Excluídos</option>
-                    </optgroup>
-
-                    <optgroup label=""></optgroup>
-
-                    <optgroup label="Estoque">
+                        </optgroup>
                         <option value="Cadastrando-Novos-Produtos">Cadastrando Novos Produtos</option>
                         <option value="Vinculando-Atributos-Produtos">Vinculando Atributos à Produtos</option>
                         <option value="Importação-Produtos-Planilha">Realizando Importação de Produtos através de uma Planilha (XLSX) </option>
@@ -1171,6 +1191,11 @@
                         <option value="Restaurando-Produtos-Excluidos">Restaurando Produtos Excluídos</option>
                     </optgroup>
 
+                    <optgroup label=""></optgroup>
+
+                    <optgroup label="">
+
+                    </optgroup>
 
                     <!-- Adicione outras opções conforme necessário -->
                 </select>
