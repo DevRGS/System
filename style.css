@@ -1343,6 +1343,9 @@ background-color: var(--claro);
     height: 19.2px;
 }
 
+#fildset-remove-linha{
+    border: none;
+}
 
 .form-horarios-sup{
     top: 90px;
