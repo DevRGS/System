@@ -86,6 +86,7 @@
         </nav>
         <nav class="links-menu">
             <a href="Equipamentos.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Equipamentos</a>
+            <a href="Integracao-Bling.html" target="_self" class="itens-menu-nav" rel="noopener noreferrer">Bling</a>
         </nav>
         </div>
     </div>
@@ -364,7 +365,7 @@
 
     </form>
     <div> <!-- Transcrição -->
-        <fieldset class="fieldset-block">
+        <fieldset class="fieldset-block" id="fildset-remove-linha">
             <legend class="titulos">
                 <pre id="transcription"></pre>
             </legend>
@@ -1645,8 +1646,11 @@
 
 
 
-        const transcribeButton = document.getElementById('transcribe-button'); ///BOTAO DE TRANSCREVER
+        const transcribeButton = document.getElementById('transcribe-button'); ///BOTAO DE TRANSCREVE
         transcribeButton.addEventListener('click', transcribeForm);
+
+
+
 
         const clearButton = document.getElementById('clear-button');
 
@@ -1657,6 +1661,9 @@
                     input.value = '';
                     document.title = 'Busque a Excelência';
                     transcription.textContent = '';
+                    transcription.style.border = 'none';
+                    transcription.style.backgroundColor = 'none';
+
                 });
 
 

@@ -37,7 +37,7 @@
     width: 100%;
     background-color: var(--claro);
     padding-top: 10px;
-
+    display: block;
 }
 
 
@@ -850,8 +850,6 @@ aside{
 /*COMEÇANDO STYLE INTEGRAÇÃO DELIVERY*/
 
 .integração-delivery{
-margin-left: 3%;
-margin-right: 3%;
 margin-bottom: 3%;
 background-color: var(--claro);
 
@@ -1460,8 +1458,6 @@ background-color: var(--claro);
 
 #matriz-objc{
     background-color: var(--claro);
-    margin-left: 3%;
-    margin-right: 3%;
     margin-bottom: 3%;
 }
 
@@ -1480,6 +1476,18 @@ background-color: var(--claro);
 .matriz-ul{
     margin-bottom: 2%;
     margin-top: 1%;
+}
+
+.matriz-h2{
+    margin-left: 2%;
+}
+
+.matriz-div{
+    margin-left: 2%;
+}
+
+.matriz-select{
+    margin-left: 2%;
 }
 
 .matriz-ul h2{
@@ -1504,9 +1512,10 @@ background-color: var(--claro);
 }
 
 .matriz-table{
-    width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .matriz-th, .matriz-td{
@@ -1551,13 +1560,14 @@ background-color: var(--claro);
     padding-bottom: 2%;
 }
 
-.referencias{
+#matriz-h2-ref{
     margin-bottom: 2%;
 }
 
-.referencias h2{
-    margin-bottom: 1%;
+#matriz-div-ref{
+    text-align: center;
 }
+
 
 .form-table{
     width: 100%;
@@ -2240,8 +2250,6 @@ background-color: var(--claro);
 
 .equip-body{
     background-color: var(--claro);;
-    padding-left: 3%;
-    padding-right: 3%;
     margin-bottom: 2%;
 }
 
@@ -2274,6 +2282,7 @@ background-color: var(--claro);
     flex-direction: row;
     margin-top: 1%;
     margin-bottom: 1%;
+    margin-left: 2%;
 }
 
 .equip-h3{
@@ -2281,6 +2290,7 @@ background-color: var(--claro);
     font-family: var(--fonte-h1);
     margin-top: 1%;
     margin-bottom: 1%;
+    margin-left: 2%;
 }
 
 .equip-ul {
@@ -2291,6 +2301,7 @@ background-color: var(--claro);
  .equip-li {
     position: relative;
     padding-left: 3%; /* Espaço para a imagem do marcador */
+    margin-left: 3%;
  }
 
  .equip-li::before {
@@ -2343,3 +2354,66 @@ background-color: var(--claro);
     margin-top: 2%;
  }
 
+
+ /*COMEÇANDO STYLE INTEGRAÇÃO BLING*/
+ /*COMEÇANDO STYLE INTEGRAÇÃO BLING*/
+ /*COMEÇANDO STYLE INTEGRAÇÃO BLING*/
+ /*COMEÇANDO STYLE INTEGRAÇÃO BLING*/
+ /*COMEÇANDO STYLE INTEGRAÇÃO BLING*/
+ /*COMEÇANDO STYLE INTEGRAÇÃO BLING*/
+ /*COMEÇANDO STYLE INTEGRAÇÃO BLING*/
+
+.bling-body{
+    background-color: var(--claro);;
+
+    margin-bottom: 2%;
+}
+
+.bling-h1{
+    font-family: var(--fonte-h1);
+    background-color: var(--primary);
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.bling-h2{
+    font-family:var(--fonte-h2);
+    text-align: start;
+    font-size: 22px;
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1%;
+}
+
+.bling-ul{
+    list-style: none; 
+    padding-left: 2%; 
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+.bling-li{
+    position: relative;
+    padding-left: 4%; 
+    max-width: 80%;
+    margin-bottom: 1%;
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+}
+
+.bling-li::before{
+    content: url('src/img/Equipamentos/flecha.png');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 2px; 
+    height: auto;
+}
